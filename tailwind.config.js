@@ -6,7 +6,18 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#423185",
+        secondary: "#91C02C",
+      },
+      fontFamily: {
+        body: "'Montserrat', sans-serif",
+      },
+      boxShadow: {
+        primary: "5px 2px 26px rgba(0, 0, 0, 0.15)",
+      },
+    },
   },
   plugins: [],
 };
