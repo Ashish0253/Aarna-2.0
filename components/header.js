@@ -8,7 +8,7 @@ export default function Header() {
           DOCTORS
         </Link>
         <Link href="/">DEPARTMENTS</Link>
-        <Link href="/">ABOUT US</Link>
+        <Link href="/about-us">ABOUT US</Link>
         <Link href="/">CONTACT US</Link>
       </div>
     </div>

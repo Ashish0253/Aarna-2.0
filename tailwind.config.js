@@ -15,7 +15,7 @@ module.exports = {
         body: "'Montserrat', sans-serif",
       },
       boxShadow: {
-        primary: "5px 2px 26px rgba(0, 0, 0, 0.15)",
+        primary: "5px 2px 10px rgba(0, 0, 0, 0.15)",
       },
     },
   },

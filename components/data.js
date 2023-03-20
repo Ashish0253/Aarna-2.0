@@ -64,3 +64,48 @@ export const healthPackages = [
     offerPrice: 2700,
   },
 ];
+
+export const centreLocations = [
+  {
+    title: "Hospital Name",
+    address:
+      "No. 2, 1, Ballupur Chowk, Ashirwad Enclave, Ballupur, Dehradun, Uttarakhand 248001",
+    mob: "09012279007",
+    link: "/",
+  },
+  {
+    title: "Hospital Name",
+    address:
+      "No. 2, 1, Ballupur Chowk, Ashirwad Enclave, Ballupur, Dehradun, Uttarakhand 248001",
+    mob: "09012279007",
+    link: "/",
+  },
+  {
+    title: "Hospital Name",
+    address:
+      "No. 2, 1, Ballupur Chowk, Ashirwad Enclave, Ballupur, Dehradun, Uttarakhand 248001",
+    mob: "09012279007",
+    link: "/",
+  },
+  {
+    title: "Hospital Name",
+    address:
+      "No. 2, 1, Ballupur Chowk, Ashirwad Enclave, Ballupur, Dehradun, Uttarakhand 248001",
+    mob: "09012279007",
+    link: "/",
+  },
+  {
+    title: "Hospital Name",
+    address:
+      "No. 2, 1, Ballupur Chowk, Ashirwad Enclave, Ballupur, Dehradun, Uttarakhand 248001",
+    mob: "09012279007",
+    link: "/",
+  },
+  {
+    title: "Hospital Name",
+    address:
+      "No. 2, 1, Ballupur Chowk, Ashirwad Enclave, Ballupur, Dehradun, Uttarakhand 248001",
+    mob: "09012279007",
+    link: "/",
+  },
+];
