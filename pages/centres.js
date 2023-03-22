@@ -27,16 +27,16 @@ export default function Centres() {
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.868799207304!2d78.02524661493497!3d30.297796481790943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092978849052d9%3A0xe74fb09a1c56420e!2sAarna%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1679285323694!5m2!1sen!2sin"
-          width="1150"
-          height="450"
+          width="1000"
+          height="350"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          className="mx-[12%] my-2 rounded-xl shadow-lg"
+          className="mx-[18%] my-2 rounded-xl shadow-lg"
         ></iframe>
       </div>
 
-      <div className="grid grid-cols-2 mx-[12%] gap-10 my-[5%]">
+      <div className="grid grid-cols-2 mx-[18%] gap-10 my-[5%]">
         {centreLocations.map((item) => {
           return (
             <div

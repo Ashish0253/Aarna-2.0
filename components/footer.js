@@ -6,10 +6,10 @@ import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 export default function Footer() {
   return (
     <div>
-      <div className="grid grid-cols-4 text-white bg-primary px-[16%] py-10 ">
+      <div className="grid grid-cols-4 text-white bg-primary px-[16%] pt-5 ">
         <div className="">
-          <div className="font-bold text-xl p-4">Patients</div>
-          <ul className="p-4 font-medium text-sm">
+          <div className="font-bold text-lg p-4 pb-1">Patients</div>
+          <ul className="p-4 font-medium text-xs">
             <li className="py-1">
               <Link href="/">Book a Test</Link>
             </li>
@@ -51,8 +51,8 @@ export default function Footer() {
           </ul>
         </div>
         <div className="">
-          <div className="font-bold text-xl p-4">About Us</div>
-          <ul className="p-4 font-medium text-sm">
+          <div className="font-bold text-lg p-4 pb-1">About Us</div>
+          <ul className="p-4 font-medium text-xs">
             <li className="py-1">
               <Link href="/">Our Journey</Link>
             </li>
@@ -97,7 +97,7 @@ export default function Footer() {
               height={70}
               className="m-4"
             />
-            <div className="p-4 text-sm">
+            <div className="p-4 text-xs">
               86, Adarsh Vihar, Kargi, Patel Nagar <br /> Bypass, Dehradun,
               Uttarakhand 248001
             </div>
@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-[#91C02C] py-4 px-[15%] text-xs">
+      <div className="bg-[#91C02C] py-2 px-[15%] text-xs font-bold">
         <p>2023 &#169; aarnadiagnosticcentre.com. All rights reserved</p>
         <p>
           CSR | Terms of Use | Privacy Policy | Online Cancellation Policy |

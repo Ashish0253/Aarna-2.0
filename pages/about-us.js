@@ -4,8 +4,8 @@ export default function AboutUs() {
       <section className="p-10 grid grid-cols-2">
         <div></div>
         <div className="p-4">
-          <div className="font-bold text-primary text-2xl p-2">Our Mission</div>
-          <div className="p-2">
+          <div className="font-bold text-primary text-xl p-2">Our Mission</div>
+          <div className="p-2 text-base">
             Lorem Ipsum is simply dummy text of the <br /> printing and
             typesetting industry. Lorem <br /> Ipsum has been the
             industry&apos;s standard <br /> dummy text ever since the 1500s,
@@ -14,10 +14,10 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="p-10 grid grid-cols-2">
+      <section className="p-10 pt-0 grid grid-cols-2">
         <div className="p-4 grid justify-items-end">
-          <div className="font-bold text-primary text-2xl p-2">Our Vision</div>
-          <div className="p-2 flex text-right">
+          <div className="font-bold text-primary text-xl p-2">Our Vision</div>
+          <div className="p-2 flex text-right text-base">
             Lorem Ipsum is simply dummy text of the <br /> printing and
             typesetting industry. Lorem <br /> Ipsum has been the
             industry&apos;s standard <br /> dummy text ever since the 1500s,

@@ -16,7 +16,7 @@ import SearchTestPackages from "@/components/searchTestPackages";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ setSidebar, ref3 }) {
   return (
     <div className="">
       <Head>
@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
 
       <Carousel />
-      <Feature />
+      <Feature setSidebar={setSidebar} ref3={ref3} />
       <HealthScans />
       <HealthPackages />
       <SearchTestPackages />

@@ -1,30 +1,46 @@
 import Link from "next/link";
 import Image from "next/image";
+import { SlLocationPin } from "react-icons/sl";
 
 export default function Navbar() {
   return (
-    <div className="flex font-semibold mx-[12%] py-4 text-md">
+    <div className="flex font-semibold mx-[10%] py-2 text-base">
       <Link href="/">
         <Image
           src="/AARNA 1.svg"
           alt="logo"
-          width={203}
-          height={40}
-          className=" my-1"
+          width={200}
+          height={30}
+          className=""
         />
       </Link>
-      <div className="flex mx-[8%]">
-        <Link href="/book-a-test" className="py-4 px-4">
+      <div className="flex ml-[10%] pt-2">
+        <Link href="/book-a-test" className="pt-2 px-4">
           Book a Test
         </Link>
-        <Link href="/centres" className="py-4 px-4">
+        <Link href="/centres" className="pt-2 px-4">
           Nearest Centre
         </Link>
-        <Link href="/" className="py-4 px-4">
+        <Link href="/" className="pt-2 px-4">
           Download Report
         </Link>
-        <div className="py-4 px-4">Dehradun</div>
-        <div className="py-4 px-4">Search Bar</div>
+        <div className="pt-1 px-4 text-xs">
+          {" "}
+          <div className="px-3 text-primary font-bold">Dehradun</div>{" "}
+          <div className="flex">
+            <SlLocationPin size={20} className="m-2 ml-0 text-primary inline" />
+            <input
+              className="border-b-2 border-primary rounded-md px-2 text-xs  focus:border-primary inline"
+              placeholder="Search Location..."
+            />
+          </div>
+        </div>
+        <div className="py-1 px-2">
+          <input
+            className="border-2 border-gray-100 rounded-md px-2 text-xs py-2 focus:border-primary"
+            placeholder="Search Test & Packages"
+          />
+        </div>
       </div>
     </div>
   );
