@@ -2,7 +2,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 export default function Call() {
   return (
-    <div className="border-2 border-transparent rounded-2xl grid grid-cols-5 mx-[16%] my-20 p-5 shadow-lg">
+    <div className="bg-white border-2 border-transparent rounded-2xl grid grid-cols-5 mx-[18%] my-20 p-5 shadow-lg">
       <div className="font-bold text-primary text-2xl col-span-2">
         Free Home Visit Facility
       </div>

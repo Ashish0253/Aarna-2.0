@@ -7,7 +7,7 @@ export default function Header() {
         <Link href="/" className="">
           DOCTORS
         </Link>
-        <Link href="/">DEPARTMENTS</Link>
+        <Link href="/departments">DEPARTMENTS</Link>
         <Link href="/about-us">ABOUT US</Link>
         <Link href="/">CONTACT US</Link>
       </div>

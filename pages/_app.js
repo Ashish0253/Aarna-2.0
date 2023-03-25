@@ -16,10 +16,11 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     setSidebar(!isInViewport3);
+    console.log("isInViewport3 doosra wala: ", isInViewport3);
   }, [isInViewport3]);
 
   return (
-    <div className="font-body">
+    <div className="font-body bg-[#f2f2f2]">
       <Header />
       <Navbar />
       <Sidebar sidebar={sidebar} />

@@ -4,7 +4,7 @@ import { SlLocationPin } from "react-icons/sl";
 
 export default function Navbar() {
   return (
-    <div className="flex font-semibold mx-[10%] py-2 text-base">
+    <div className="bg-white flex font-semibold px-[15%] py-2 text-[13px]">
       <Link href="/">
         <Image
           src="/AARNA 1.svg"
@@ -14,7 +14,7 @@ export default function Navbar() {
           className=""
         />
       </Link>
-      <div className="flex ml-[10%] pt-2">
+      <div className="flex ml-[5%] pt-2">
         <Link href="/book-a-test" className="pt-2 px-4">
           Book a Test
         </Link>
@@ -26,11 +26,10 @@ export default function Navbar() {
         </Link>
         <div className="pt-1 px-4 text-xs">
           {" "}
-          <div className="px-3 text-primary font-bold">Dehradun</div>{" "}
           <div className="flex">
             <SlLocationPin size={20} className="m-2 ml-0 text-primary inline" />
             <input
-              className="border-b-2 border-primary rounded-md px-2 text-xs  focus:border-primary inline"
+              className="border-b-2 border-primary rounded-md px-2 text-xs focus:border-primary inline w-[100px]"
               placeholder="Search Location..."
             />
           </div>

@@ -1,6 +1,6 @@
 export default function SearchTestPackages() {
   return (
-    <div className="border-2 border-transparent rounded-2xl  mx-[18%] my-20 pb-10 px-12 shadow-xl">
+    <div className="bg-white border-2 border-transparent rounded-2xl  mx-[18%] my-20 pb-10 px-12 shadow-xl">
       <div className="text-2xl font-bold text-primary py-8 ">
         Search Test and Packages
       </div>

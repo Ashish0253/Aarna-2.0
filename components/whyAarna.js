@@ -1,7 +1,7 @@
 export default function WhyAarna() {
   return (
     <div>
-      <div className="border-2 border-transparent rounded-2xl mx-[18%] my-10 pb-3 text-primary">
+      <div className="bg-white border-2 border-transparent rounded-2xl mx-[18%] my-10 pb-3 text-primary">
         <div className="font-bold text-2xl py-4 border-b-4 border-primary">
           Why Aarna Diagnostic Centre
         </div>

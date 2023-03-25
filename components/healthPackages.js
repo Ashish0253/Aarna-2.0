@@ -22,7 +22,7 @@ export default function HealthPackages() {
   };
 
   return (
-    <div className="border-2 border-transparent rounded-2xl  mx-[16%] my-20 pb-10 shadow-lg">
+    <div className="bg-white border-2 border-transparent rounded-2xl  mx-[16%] my-20 pb-10 shadow-lg">
       <div className="text-2xl font-bold text-primary px-10 pt-10 pb">
         Health Packages
       </div>
