@@ -31,17 +31,19 @@ export default function AboutUs() {
         <div>Our Values</div>
       </section>
       <section>
-        <div className="border-2 border-transparent rounded-2xl  mx-[13%] my-20 pb-10 px-12">
-          <div className="text-2xl font-bold text-primary py-8 ">Ethos</div>
+        <div className="border-2 border-transparent rounded-2xl  mx-[15%] my-20 pb-10">
+          <div className="text-2xl font-bold text-primary pt-8 pb-4 ">
+            Ethos
+          </div>
           <div className="flex justify-start  text-sm font-semibold text-primary">
-            <button className="border-2 border-primary rounded-xl px-4 py-1 mr-4 hover:bg-secondary hover:text-white ease-out">
+            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4 hover:bg-secondary hover:text-white ease-out">
               Board of Directors
             </button>
-            <button className="border-2 border-primary rounded-xl px-4 py-1 mr-4 hover:bg-secondary hover:text-white ease-out">
+            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4 hover:bg-secondary hover:text-white ease-out">
               {" "}
               Senior Management
             </button>
-            <button className="border-2 border-primary rounded-xl px-4 py-1 mr-4  hover:bg-secondary hover:text-white ease-out">
+            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4  hover:bg-secondary hover:text-white ease-out">
               Administration
             </button>
           </div>

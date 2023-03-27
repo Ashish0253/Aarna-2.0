@@ -6,7 +6,7 @@ import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 export default function Footer() {
   return (
     <div>
-      <div className="grid grid-cols-4 text-white bg-primary px-[16%] pt-5 ">
+      <div className="grid grid-cols-4 text-white bg-primary px-[15%] pt-5 ">
         <div className="">
           <div className="font-bold text-lg p-4 pb-1">Patients</div>
           <ul className="p-4 font-medium text-xs">
@@ -88,7 +88,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-2 grid justify-center">
+        <div className="col-span-2 grid justify-end">
           <div>
             <Image
               src="/AARNA LOGO 1.svg"

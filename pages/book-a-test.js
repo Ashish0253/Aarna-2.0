@@ -11,9 +11,9 @@ export default function BookATest() {
   return (
     <div>
       <Carousel />
-      <div className="grid grid-cols-4 mx-[15%] my-4 gap-8">
+      <div className="grid grid-cols-4 mx-[15%] my-4 gap-8 bg-[#f2f2f2]">
         {/* Filters Section  */}
-        <div className="border-2 border-transparent shadow-lg rounded-lg h-[870px]">
+        <div className="border-2 border-transparent shadow-lg rounded-lg h-[870px] bg-white">
           <div className="p-8 border-b-2 border-gray-300 text-lg font-semibold">
             Filters
           </div>
@@ -24,11 +24,15 @@ export default function BookATest() {
             </div>
             <div className="p-2 text-sm font-medium">
               <div className="p-1">
-                <input type="checkbox" name="Test" className="" />
+                <input
+                  type="checkbox"
+                  name="Test"
+                  className="accent-yellow-400 border-2 border-solid border-yellow-400"
+                />
                 <div className="inline px-1">Test</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Packages" />
+                <input type="checkbox" name="Packages" id="cb1" />
                 <div className="inline px-1">Packages</div>
               </div>
             </div>
@@ -106,12 +110,12 @@ export default function BookATest() {
           </div>
         </div>
         {/* Tests Section  */}
-        <div className="col-span-3 grid grid-cols-2 gap-8 my-4">
+        <div className="col-span-3 grid grid-cols-2 gap-8 my-4 bg-[#f2f2f2]">
           {Test.map((item) => {
             return (
               <div
                 key={item.title}
-                className="border-2 border-transparent rounded-lg p-4 text-sm shadow-lg"
+                className="border-2 border-transparent rounded-lg p-4 text-sm shadow-lg bg-white"
               >
                 <div className="text-base font-semibold text-primary flex">
                   <Image
@@ -128,11 +132,11 @@ export default function BookATest() {
                   Specimen:{" "}
                   <div className="font-semibold"> {item.specimen} </div>
                 </div>
-                <div className="flex justify-end font-semibold">
+                <div className="flex justify-end font-semibold px-3">
                   <BsCurrencyRupee className="my-1" /> {item.price}
                 </div>
 
-                <div className="text-xs flex">
+                <div className="text-xs flex border-t-2 pt-4 mt-4 border-dashed border-gray-200">
                   <button className=" text-white border-2 border-transparent shadow-lg rounded-xl px-2 py-1 m-1 bg-primary">
                     Buy Now
                   </button>{" "}
@@ -142,7 +146,7 @@ export default function BookATest() {
                   </button>
                   <Link
                     href="/"
-                    className=" flex text-xs px-2 text-[#12A7A7] font-medium py-2 m-1"
+                    className=" flex text-xs px-2 text-[#12A7A7] font-medium py-2 m-1 pl-8"
                   >
                     <MdDownloadForOffline className="m-[1px]" />
                     Download Report

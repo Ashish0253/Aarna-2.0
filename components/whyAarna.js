@@ -1,7 +1,7 @@
 export default function WhyAarna() {
   return (
     <div>
-      <div className="bg-white border-2 border-transparent rounded-2xl mx-[18%] my-10 pb-3 text-primary">
+      <div className=" border-2 border-transparent rounded-2xl mx-[15%] my-10 pb-3 text-primary">
         <div className="font-bold text-2xl py-4 border-b-4 border-primary">
           Why Aarna Diagnostic Centre
         </div>
@@ -32,21 +32,21 @@ export default function WhyAarna() {
           </div>
         </div>
 
-        <div className="flex justify-end underline text-lg p-1 font-semibold m-4">
+        <div className="text-gray-500 flex justify-end underline text-base p-1 font-semibold m-4">
           <button> Explore &gt;&gt;</button>{" "}
         </div>
       </div>
 
-      <div className="border-2 border-transparent rounded-2xl mx-[18%] my-10 pb-3 text-primary">
+      <div className="border-2 border-transparent rounded-2xl mx-[15%] my-10 pb-3 text-primary">
         <div className="font-bold text-2xl py-4 border-b-4 border-primary">
           Offer & Anouncement
         </div>
-        <div className="flex justify-end underline text-lg p-1 font-semibold m-4">
+        <div className="text-gray-500 flex justify-end underline text-base p-1 font-semibold m-4">
           <button> View All</button>{" "}
         </div>
       </div>
 
-      <div className="border-2 border-transparent rounded-2xl mx-[18%] my-10 pb-3 text-primary">
+      <div className="border-2 border-transparent rounded-2xl mx-[15%] my-10 pb-3 text-primary">
         <div className="font-bold text-2xl py-4 border-b-4 border-primary">
           Quality
         </div>

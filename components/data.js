@@ -1,7 +1,7 @@
 export const healthPackages = [
   {
     id: 4,
-    title: "Advanced Basic Fever Panel",
+    title: "Advanced Basic Fever Panel 1 ",
     numberOfTests: 7,
     tests: ["CBC + ESR", "MP", "Widal", "Urinal R/M..."],
     price: 2560,
@@ -9,7 +9,7 @@ export const healthPackages = [
   },
   {
     id: 4,
-    title: "Advanced Basic Fever Panel",
+    title: "Advanced Basic Fever Panel 2",
     numberOfTests: 7,
     tests: ["CBC + ESR", "MP", "Widal", "Urinal R/M..."],
     price: 2560,
@@ -17,7 +17,7 @@ export const healthPackages = [
   },
   {
     id: 4,
-    title: "Advanced Basic Fever Panel",
+    title: "Advanced Basic Fever Panel 3",
     numberOfTests: 7,
     tests: ["CBC + ESR", "MP", "Widal", "Urinal R/M..."],
     price: 2560,
@@ -25,7 +25,7 @@ export const healthPackages = [
   },
   {
     id: 4,
-    title: "Advanced Basic Fever Panel",
+    title: "Advanced Basic Fever Panel 4",
     numberOfTests: 7,
     tests: ["CBC + ESR", "MP", "Widal", "Urinal R/M..."],
     price: 2560,
@@ -33,7 +33,7 @@ export const healthPackages = [
   },
   {
     id: 4,
-    title: "Advanced Basic Fever Panel",
+    title: "Advanced Basic Fever Panel 5",
     numberOfTests: 7,
     tests: ["CBC + ESR", "MP", "Widal", "Urinal R/M..."],
     price: 2560,
@@ -41,7 +41,7 @@ export const healthPackages = [
   },
   {
     id: 4,
-    title: "Advanced Basic Fever Panel",
+    title: "Advanced Basic Fever Panel 6",
     numberOfTests: 7,
     tests: ["CBC + ESR", "MP", "Widal", "Urinal R/M..."],
     price: 2560,
@@ -49,7 +49,7 @@ export const healthPackages = [
   },
   {
     id: 4,
-    title: "Advanced Basic Fever Panel",
+    title: "Advanced Basic Fever Panel 7",
     numberOfTests: 7,
     tests: ["CBC + ESR", "MP", "Widal", "Urinal R/M..."],
     price: 2560,
@@ -57,7 +57,7 @@ export const healthPackages = [
   },
   {
     id: 4,
-    title: "Advanced Basic Fever Panel",
+    title: "Advanced Basic Fever Panel 8",
     numberOfTests: 7,
     tests: ["CBC + ESR", "MP", "Widal", "Urinal R/M..."],
     price: 2560,
