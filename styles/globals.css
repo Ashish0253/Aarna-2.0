@@ -18,7 +18,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(136, 136, 136);
+  background: rgb(145, 192, 44);
   border-radius: 10px;
 }
 
@@ -43,3 +43,38 @@ input[type="checkbox"] + label {
   position: absolute;
   line-height: 14px;
 }
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slider-arrow-packages {
+  position: absolute;
+  /* display: flex;
+  justify-content: space-between; */
+  height: 10%;
+  width: 100%;
+  top: 45%;
+}
+/* .arrow-btn {
+  top: 0px;
+  z-index: 1;
+} */
+
+.arrow-btn-prev-packages {
+  z-index: 1;
+  left: 10px;
+}
+
+.arrow-btn-next-packages {
+  z-index: 1;
+  float: right;
+}
+
+/* #trial {
+  background-color: rgba(26, 14, 105, 0.9);
+} */

@@ -6,10 +6,10 @@ import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 export default function Footer() {
   return (
     <div>
-      <div className="grid grid-cols-4 text-white bg-primary px-[15%] pt-5 ">
+      <div className="grid grid-cols-4 text-white bg-tertiary px-[15%] pt-5 ">
         <div className="">
           <div className="font-bold text-lg p-4 pb-1">Patients</div>
-          <ul className="p-4 font-medium text-xs">
+          <ul className="p-4 font-semibold text-xs">
             <li className="py-1">
               <Link href="/">Book a Test</Link>
             </li>
@@ -52,9 +52,9 @@ export default function Footer() {
         </div>
         <div className="">
           <div className="font-bold text-lg p-4 pb-1">About Us</div>
-          <ul className="p-4 font-medium text-xs">
+          <ul className="p-4 font-semibold text-xs">
             <li className="py-1">
-              <Link href="/">Our Journey</Link>
+              <Link href="/about-us/our-journey">Our Journey</Link>
             </li>
             <li className="py-1">
               <Link href="/" className="py-1">
@@ -72,12 +72,12 @@ export default function Footer() {
               </Link>
             </li>
             <li className="py-1">
-              <Link href="/" className="py-1">
+              <Link href="/about-us/logistics-strength" className="py-1">
                 Logistics Strength
               </Link>
             </li>
             <li className="py-1">
-              <Link href="/" className="py-1">
+              <Link href="/about-us/csr" className="py-1">
                 CSR
               </Link>
             </li>
@@ -97,7 +97,7 @@ export default function Footer() {
               height={70}
               className="m-4"
             />
-            <div className="p-4 text-xs">
+            <div className="p-4 text-sm">
               86, Adarsh Vihar, Kargi, Patel Nagar <br /> Bypass, Dehradun,
               Uttarakhand 248001
             </div>
@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-[#91C02C] py-2 px-[15%] text-xs font-bold">
+      <div className="bg-primary py-2 px-[15%] text-white text-xs font-medium">
         <p>2023 &#169; aarnadiagnosticcentre.com. All rights reserved</p>
         <p>
           CSR | Terms of Use | Privacy Policy | Online Cancellation Policy |

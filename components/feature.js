@@ -12,7 +12,7 @@ export default function Feature({ setSidebar, ref3 }) {
   return (
     <div
       ref={ref3}
-      className="bg-[#423185] text-white font-semibold text-md px-[18%] py-4 "
+      className="bg-tertiary text-white font-semibold text-md px-[18%] py-4 "
     >
       <div className=" grid grid-cols-4 mx-[10%]">
         <div className="grid justify-items-end pr-7 border-r-2 ">

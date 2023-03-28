@@ -18,25 +18,23 @@ export default function Navbar() {
         <Link href="/book-a-test" className="pt-2 px-4">
           Book a Test
         </Link>
-        <Link href="/centres" className="pt-2 px-4">
+        <Link href="/nearest-centre" className="pt-2 px-4">
           Nearest Centre
         </Link>
         <Link href="/" className="pt-2 px-4">
           Download Report
         </Link>
-        <div className="pt-1 px-4 text-xs">
+        <div className="pt-1 px-2 text-xs flex">
           {" "}
-          <div className="flex">
-            <SlLocationPin size={15} className="m-2 ml-0 text-primary inline" />
-            <input
-              className="border-b-2 border-primary rounded-md px-2 text-xs focus:border-primary inline w-[120px]"
-              placeholder="Search Location..."
-            />
-          </div>
-        </div>
-        <div className="py-1 px-2">
+          <SlLocationPin size={15} className="m-2 ml-0 text-primary inline" />
           <input
-            className="border-2 border-gray-100 rounded-lg px-2 text-xs py-2 focus:border-primary bg-[url('/Search.svg')] bg-no-repeat bg-[14rem]"
+            className="border-b-2 border-primary rounded-lg px-2 py-1 text-xs focus:border-primary  w-[140px]"
+            placeholder="Search Location..."
+          />
+        </div>
+        <div className="py-1 px-4">
+          <input
+            className="border-2 border-gray-100 rounded-lg px-2 text-xs py-1 focus:border-primary bg-[url('/Search.svg')] bg-no-repeat bg-[14rem]"
             placeholder="Search Test & Packages"
             size={30}
           />

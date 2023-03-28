@@ -1,103 +1,93 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import { healthPackages } from "./data";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
+import React from "react";
+import { healthPackages } from "../constants/healthPackages";
+// import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import Slider from "react-slick";
+
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { ButtonBase } from "@mui/material";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function HealthPackages() {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    },
-  };
+  const slider = React.useRef(null);
 
-  const CustomLeftArrow = ({ onClick }) => (
-    <i onClick={() => onClick()} className="custom-left-arrow">
-      Left
-    </i>
-  );
-  const CustomRightArrow = ({ onClick }) => {
+  function RenderArrows() {
     return (
-      <i className="custom-right-arrow" onClick={() => onClick()}>
-        Right
-      </i>
-    );
-  };
-
-  const CustomButtonGroup = ({ next, previous, goToSlide, carouselState }) => {
-    const { totalItems, currentSlide } = carouselState;
-    return (
-      <div className="custom-button-group">
-        <div>Current slide is {currentSlide}</div>
-        <button onClick={() => previous()}>Previous slide</button>
-        <button onClick={() => next()}>Next slide</button>
-        <button
-          onClick={() => goToSlide(Math.floor(Math.random() * totalItems + 1))}
+      <div className="slider-arrow-packages">
+        <ButtonBase
+          className="arrow-btn-prev-packages"
+          onClick={() => slider?.current?.slickPrev()}
         >
-          Go to a random slide
-        </button>
+          <ArrowBackIosIcon fontSize="large" sx={{ color: "black" }} />
+        </ButtonBase>
+        <ButtonBase
+          className="arrow-btn-next-packages"
+          onClick={() => slider?.current?.slickNext()}
+        >
+          <ArrowForwardIosIcon fontSize="large" sx={{ color: "black" }} />
+        </ButtonBase>
       </div>
     );
-  };
-  const CustomButtonGroupAsArrows = ({ next, previous }) => {
-    return (
-      <div className="flex justify-between absolute top-32">
-        {/* <h4>These buttons can be positioned anywhere you want on the screen</h4> */}
-        <button onClick={previous} className="ml-2">
-          <AiOutlineLeft size={30} />
-        </button>
-        <button onClick={next} className="ml-[1000px]">
-          <AiOutlineRight size={30} />
-        </button>
-      </div>
-    );
+  }
+
+  var settings = {
+    dots: false,
+    infinite: true,
+    arrows: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    initialSlide: 0,
+    // nextArrow: <SampleArrow />,
+    // prevArrow: <SampleArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className=" bg-white border-2 border-transparent rounded-2xl  mx-[15%] my-20 pb-10 shadow-lg">
-      <div className="text-2xl font-bold text-primary px-10 pt-10 pb">
+      <div className="text-2xl font-bold text-black px-10 pt-10 pb">
         Health Packages
       </div>
-      <div className="relative">
-        <Carousel
-          arrows={false}
-          customButtonGroup={<CustomButtonGroupAsArrows />}
-          // customRightArrow={<CustomRightArrow />}
-          swipeable={false}
-          draggable={false}
-          showDots={false}
-          responsive={responsive}
-          ssr={true}
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // deviceType={this.props.deviceType}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-          className="h-[270px] mx-10"
-          renderButtonGroupOutside={true}
-        >
+      <div className="relative h-full">
+        <RenderArrows />
+
+        <Slider ref={slider} {...settings} className="px-10 my-4">
           {healthPackages.map((item) => {
             return (
               <div
                 key={item.title}
-                className="border-2 mx-2 p-5 rounded-xl bg-primary text-white h-[210px] "
+                className="border-2 mx-2 p-5 rounded-xl bg-tertiary text-white h-[230px] "
               >
                 <div className="text-2xl font-bold p-2">{item.title}</div>
                 <div className="flex p-2">
@@ -111,13 +101,13 @@ export default function HealthPackages() {
                   </div>
                 </div>
 
-                <div className="bg-secondary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-sm py-2 w-[82%] my-3 absolute">
+                <div className="bg-primary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-sm py-2 w-[82%] my-3 ">
                   Book Now
                 </div>
               </div>
             );
           })}
-        </Carousel>
+        </Slider>
       </div>
     </div>
   );

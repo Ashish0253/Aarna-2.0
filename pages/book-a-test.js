@@ -1,5 +1,5 @@
 import Carousel from "@/components/carousel";
-import { Test } from "@/components/data";
+import { Test } from "@/constants/tests";
 import Image from "next/image";
 import Link from "next/link";
 import { BsCurrencyRupee } from "react-icons/bs";

@@ -1,5 +1,5 @@
 import { BiMapAlt } from "react-icons/bi";
-import { centreLocations } from "@/components/data";
+import { centres } from "@/constants/centres";
 import { SlLocationPin } from "react-icons/sl";
 import { BsTelephone } from "react-icons/bs";
 // import { MdLocationOn } from "react-icons/md";
@@ -8,19 +8,19 @@ export default function Centres() {
   return (
     <div className="bg-[#f2f2f2]">
       <div className="flex justify-start  text-sm font-semibold text-primary mx-[15%] my-[2%]">
-        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white hover:bg-secondary hover:text-white ease-out">
+        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white hover:bg-tertiary hover:text-white ease-out">
           Doiwala
         </button>
-        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white hover:bg-secondary hover:text-white ease-out">
+        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white hover:bg-tertiary hover:text-white ease-out">
           Mussorie
         </button>
-        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white  hover:bg-secondary hover:text-white ease-out">
+        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white  hover:bg-tertiary hover:text-white ease-out">
           Vikas Nagar
         </button>
-        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white  hover:bg-secondary hover:text-white ease-out">
+        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white  hover:bg-tertiary hover:text-white ease-out">
           Rishikesh
         </button>
-        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white hover:bg-secondary hover:text-white ease-out">
+        <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white hover:bg-tertiary hover:text-white ease-out">
           Dehradun
         </button>
       </div>
@@ -45,7 +45,7 @@ export default function Centres() {
       </div>
 
       <div className="grid grid-cols-2 mx-[15%] gap-x-10 gap-y-5 my-6">
-        {centreLocations.map((item) => {
+        {centres.map((item) => {
           return (
             <div
               key={item.title}
@@ -55,11 +55,11 @@ export default function Centres() {
                 {item.title}
               </div>
               <div className="flex p-2 text-sm">
-                <SlLocationPin size={35} className="mr-2 text-primary " />{" "}
+                <SlLocationPin size={24} className="mr-2 text-primary " />{" "}
                 {item.address}
               </div>
               <div className="flex p-2 text-sm">
-                <BsTelephone size={22} className="mr-2 text-primary" />{" "}
+                <BsTelephone size={20} className="mr-2 ml-1 text-primary" />{" "}
                 {item.mob}
               </div>
 
