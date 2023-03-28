@@ -1,5 +1,5 @@
 import Carousel from "@/components/carousel";
-import { Test } from "@/constants/tests";
+import { Tests } from "@/constants/tests";
 import Image from "next/image";
 import Link from "next/link";
 import { BsCurrencyRupee } from "react-icons/bs";
@@ -111,7 +111,7 @@ export default function BookATest() {
         </div>
         {/* Tests Section  */}
         <div className="col-span-3 grid grid-cols-2 gap-8 my-4 bg-[#f2f2f2]">
-          {Test.map((item) => {
+          {Tests.map((item) => {
             return (
               <div
                 key={item.title}
