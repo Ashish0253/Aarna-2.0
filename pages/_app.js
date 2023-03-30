@@ -5,6 +5,7 @@ import Sidebar from "@/components/sidebar";
 import "@/styles/globals.css";
 import { useEffect, useMemo, useRef, useState } from "react";
 import useIntersection from "@/hooks/useIntersection";
+import ScrollButton from "@/components/ScrollButton";
 
 export default function App({ Component, pageProps }) {
   const [sidebar, setSidebar] = useState(false);
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }) {
     <div className="font-body bg-[#f2f2f2]">
       <Header />
       <Navbar />
+      <ScrollButton />
       <Sidebar sidebar={sidebar} />
       <Component {...pageProps} ref3={ref3} />
       <Footer />
