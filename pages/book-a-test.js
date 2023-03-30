@@ -8,6 +8,16 @@ import { MdDownloadForOffline } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 export default function BookATest() {
+  function isClicked() {
+    if (document.getElementById("my-checkbox").checked) {
+      document
+        .getElementById("my-checkbox")
+        .classList.remove("appearance-none");
+    } else {
+      document.getElementById("my-checkbox").classList.add("appearance-none");
+    }
+  }
+
   return (
     <div>
       <Carousel />
@@ -25,14 +35,22 @@ export default function BookATest() {
             <div className="p-2 text-sm font-medium">
               <div className="p-1">
                 <input
+                  id="my-checkbox"
                   type="checkbox"
                   name="Test"
-                  className="accent-yellow-400 border-2 border-solid border-yellow-400"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
                 />
                 <div className="inline px-1">Test</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Packages" id="cb1" />
+                <input
+                  type="checkbox"
+                  name="Packages"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Packages</div>
               </div>
             </div>
