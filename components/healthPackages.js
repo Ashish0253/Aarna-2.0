@@ -101,7 +101,7 @@ export default function HealthPackages() {
                   </div>
                 </div>
 
-                <div className="bg-primary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-sm py-2 w-[82%] my-3 ">
+                <div className="bg-primary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-sm py-2 w-[100%] my-3 ">
                   Book Now
                 </div>
               </div>
