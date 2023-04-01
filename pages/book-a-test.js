@@ -8,6 +8,24 @@ import { MdDownloadForOffline } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 export default function BookATest() {
+  //   var elms = document.querySelectorAll("[id='duplicateID']");
+
+  // for(var i = 0; i < elms.length; i++)
+  //   elms[i].style.display='none'; // <-- whatever you need to do here.
+
+  function isClicked() {
+    var elms = document.querySelectorAll("input");
+    console.log(elms);
+    console.log(elms.checked);
+    for (var i = 0; i < elms.length; i++) {
+      if (elms[i].checked) {
+        elms[i].classList.remove("appearance-none");
+      } else {
+        elms[i].classList.add("appearance-none");
+      }
+    }
+  }
+
   return (
     <div>
       <Carousel />
@@ -25,14 +43,22 @@ export default function BookATest() {
             <div className="p-2 text-sm font-medium">
               <div className="p-1">
                 <input
+                  id="my-checkbox"
                   type="checkbox"
                   name="Test"
-                  className="accent-yellow-400 border-2 border-solid border-yellow-400"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
                 />
                 <div className="inline px-1">Test</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Packages" id="cb1" />
+                <input
+                  type="checkbox"
+                  name="Packages"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Packages</div>
               </div>
             </div>
@@ -42,31 +68,73 @@ export default function BookATest() {
             <div className="text-lg font-semibold">Organ</div>
             <div className="p-2 text-sm font-medium">
               <div className="p-1">
-                <input type="checkbox" name="Adrenal Gland" />
+                <input
+                  type="checkbox"
+                  name="Adrenal Gland"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Adrenal Gland</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Bone" />
+                <input
+                  type="checkbox"
+                  name="Bone"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Bone</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Heart" />
+                <input
+                  type="checkbox"
+                  name="Heart"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Heart</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Kidney" />
+                <input
+                  type="checkbox"
+                  name="Kidney"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Kidney</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Liver" />
+                <input
+                  type="checkbox"
+                  name="Liver"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Liver</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Pancreas" />
+                <input
+                  type="checkbox"
+                  name="Pancreas"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Pancreas</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Thyroid" />
+                <input
+                  type="checkbox"
+                  name="Thyroid"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Thyroid</div>
               </div>
             </div>
@@ -75,35 +143,83 @@ export default function BookATest() {
             <div className="text-lg font-semibold">Condition</div>
             <div className="p-2 text-sm font-medium">
               <div className="p-1">
-                <input type="checkbox" name="Allergy" />
+                <input
+                  type="checkbox"
+                  name="Allergy"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Allergy</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Diabetes" />
+                <input
+                  type="checkbox"
+                  name="Diabetes"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Diabetes</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="HIV" />
+                <input
+                  type="checkbox"
+                  name="HIV"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">HIV</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Viral Infections" />
+                <input
+                  type="checkbox"
+                  name="Viral Infections"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Viral Infections</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Fever" />
+                <input
+                  type="checkbox"
+                  name="Fever"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Fever</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Heart Diseases" />
+                <input
+                  type="checkbox"
+                  name="Heart Diseases"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Heart Diseases</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Hypertension" />
+                <input
+                  type="checkbox"
+                  name="Hypertension"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Hypertension</div>
               </div>
               <div className="p-1">
-                <input type="checkbox" name="Infertility" />
+                <input
+                  type="checkbox"
+                  name="Infertility"
+                  id="my-checkbox"
+                  onClick={isClicked}
+                  className="h-3 appearance-none w-3 border-2 rounded-sm border-yellow-400 accent-yellow-400"
+                />
                 <div className="inline px-1">Infertility</div>
               </div>
             </div>
