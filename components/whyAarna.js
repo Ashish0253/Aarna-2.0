@@ -32,7 +32,7 @@ export default function WhyAarna() {
           </div>
         </div>
 
-        <div className="text-gray-500 flex justify-end underline text-base p-1 font-semibold m-4">
+        <div className="text-tertiary flex justify-end underline text-base p-1 font-semibold m-4">
           <button> Explore &gt;&gt;</button>{" "}
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function WhyAarna() {
         <div className="font-bold text-2xl py-4 border-b-4 border-black">
           Offer & Anouncement
         </div>
-        <div className="text-gray-500 flex justify-end underline text-base p-1 font-semibold m-4">
+        <div className="text-tertiary flex justify-end underline text-base p-1 font-semibold m-4">
           <button> View All</button>{" "}
         </div>
       </div>

@@ -87,21 +87,23 @@ export default function HealthPackages() {
             return (
               <div
                 key={item.title}
-                className="border-2 mx-2 p-5 rounded-xl bg-tertiary text-white h-[230px] "
+                className="border-2  mx-2 p-5 rounded-xl bg-tertiary  text-white h-[225px] h-"
               >
-                <div className="text-2xl font-bold p-2">{item.title}</div>
-                <div className="flex p-2">
-                  <div className="line-through">{item.price}</div>
-                  <div className="ml-6 ">{item.offerPrice}</div>
-                </div>
-                <div className="flex justify-between ">
-                  <div className="text-xs underline py-1">Know More</div>
-                  <div className="border-2 font-bold border-transparent text-black text-xs bg-[#FFD500] py-1 px-4 rounded-2xl">
-                    39 parameter(s) covered
+                <div className="">
+                  <div className="text-2xl font-bold p-2">{item.title}</div>
+                  <div className="flex p-2">
+                    <div className="line-through">&#8377; {item.price}</div>
+                    <div className="ml-6 ">&#8377; {item.offerPrice}</div>
+                  </div>
+                  <div className="flex justify-between ">
+                    <div className="text-xs underline py-1">Know More</div>
+                    <div className="border-2 font-bold border-transparent text-black text-xs bg-[#FFD500] py-1 px-4 rounded-2xl">
+                      39 parameter(s) covered
+                    </div>
                   </div>
                 </div>
 
-                <div className="bg-primary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-sm py-2 w-[82%] my-3 ">
+                <div className="z-10 bg-primary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-sm py-2 w-full my-3 ">
                   Book Now
                 </div>
               </div>
