@@ -87,9 +87,9 @@ export default function HealthPackages() {
             return (
               <div
                 key={item.title}
-                className="border-2 mx-2 p-5 rounded-xl bg-tertiary  text-white h-[225px] h-"
+                className=" mx-2 relative  text-white h-[225px] h-"
               >
-                <div className=" pb-0">
+                <div className="border-2 p-5 rounded-2xl bg-tertiary pb-1 h-[200px]">
                   <div className="text-2xl font-bold p-2 h-20">
                     {item.title}
                   </div>
@@ -105,7 +105,7 @@ export default function HealthPackages() {
                   </div>
                 </div>
 
-                <div className="bg-primary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-sm py-2 w-[100%] my-3 ">
+                <div className="bg-primary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-sm py-2 w-[90%] absolute left-4 bottom-2 ">
                   Book Now
                 </div>
               </div>

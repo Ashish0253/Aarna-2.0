@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="bg-tertiary text-white font-semibold px-[28%] text-base">
-      <div className=" container flex justify-around p-2">
+    <div className="bg-tertiary text-white font-bold px-[28%] text-base">
+      <div className=" container flex justify-around p-3">
         <Link href="/" className="">
           DOCTORS
         </Link>

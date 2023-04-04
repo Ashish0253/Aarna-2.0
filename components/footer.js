@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-primary py-2 px-[15%] text-white text-xs font-medium">
+      <div className="bg-primary py-2 px-[15%] text-white text-xs font-base">
         <p>2023 &#169; aarnadiagnosticcentre.com. All rights reserved</p>
         <p>
           CSR | Terms of Use | Privacy Policy | Online Cancellation Policy |

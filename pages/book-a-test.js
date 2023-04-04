@@ -31,8 +31,8 @@ export default function BookATest() {
       <Carousel />
       <div className="grid grid-cols-4 mx-[15%] my-8 gap-8 bg-[#f2f2f2]">
         {/* Filters Section  */}
-        <div className="border border-transparent  rounded-lg h-full">
-          <div className="p-8 border-b-2 rounded-t-lg border-gray-300 bg-white text-lg font-semibold">
+        <div className="border border-transparent rounded-xl h-full">
+          <div className="p-8 border-b-2 rounded-t-xl border-gray-300 bg-white text-lg font-semibold">
             Filters
           </div>
           <div className="p-8 border-b-2 border-gray-300  bg-white ">
@@ -151,7 +151,7 @@ export default function BookATest() {
               </div>
             )}
           </div>
-          <div className="p-8 border-gray-300  bg-white rounded-b-lg">
+          <div className="p-8 border-gray-300  bg-white rounded-b-xl">
             <div className="text-lg font-semibold flex justify-between">
               Condition{" "}
               <button onClick={() => setThird(!third)}>
@@ -250,7 +250,7 @@ export default function BookATest() {
             return (
               <div
                 key={item.title}
-                className="border-2 border-transparent rounded-lg p-4 text-sm shadow-lg bg-white"
+                className="border-2 border-transparent rounded-xl p-4 text-sm shadow-lg bg-white"
               >
                 <div className="text-base font-semibold text-primary flex">
                   <Image
