@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { why, quality, offer } from "../constants/whyArna";
+
 export default function WhyAarna() {
   return (
     <div>
@@ -5,31 +8,19 @@ export default function WhyAarna() {
         <div className="font-bold text-2xl py-4 border-b-4 border-black">
           Why Aarna Diagnostic Centre
         </div>
+
         <div className="grid grid-cols-3">
-          <div className="p-8">
-            <div className="font-bold text-xl text-tertiary">3 Lakh</div>
-            <div>Samples Collected</div>
-          </div>
-          <div className="p-8">
-            <div className="font-bold text-xl text-tertiary">50+</div>
-            <div>Collection Centres</div>
-          </div>
-          <div className="p-8">
-            <div className="font-bold text-xl text-tertiary">10 Lakh</div>
-            <div>Total No. of Customers</div>
-          </div>
-          <div className="p-8 pt-0">
-            <div className="font-bold text-xl text-tertiary">2</div>
-            <div>Labs</div>
-          </div>
-          <div className="p-8 pt-0">
-            <div className="font-bold text-xl text-tertiary">5000+</div>
-            <div>Total No. of Tests & Panels</div>
-          </div>
-          <div className="p-8 pt-0">
-            <div className="font-bold text-xl text-tertiary">300</div>
-            <div>Tests per day</div>
-          </div>
+          {why.map((item) => (
+            <div key={item.title} className="p-8 flex">
+              <Image src={item.img} width={60} height={20} alt={item.title} />
+              <div className="ml-4 mt-1">
+                <div className="font-bold text-xl text-tertiary">
+                  {item.title}
+                </div>
+                <div>{item.content}</div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="text-tertiary flex justify-end underline text-base p-1 font-semibold m-4">
@@ -41,6 +32,25 @@ export default function WhyAarna() {
         <div className="font-bold text-2xl py-4 border-b-4 border-black">
           Offer & Anouncement
         </div>
+        <div className="flex justify-center mt-10">
+          {offer.map((item) => {
+            return (
+              <div
+                key={item.title}
+                className="border-2 border-transparent rounded-md p-10 bg-white m-2 grid justify-items-center"
+              >
+                <Image
+                  src={item.img}
+                  alt={item.img}
+                  height={30}
+                  width={200}
+                  className="rounded-lg"
+                />
+                <p className="pt-4 font-bold">{item.content}</p>
+              </div>
+            );
+          })}
+        </div>
         <div className="text-tertiary flex justify-end underline text-base p-1 font-semibold m-4">
           <button> View All</button>{" "}
         </div>
@@ -51,22 +61,18 @@ export default function WhyAarna() {
           Quality
         </div>
         <div className="grid grid-cols-3">
-          <div className="p-8">
-            <div className="font-bold text-xl text-tertiary">600+</div>
-            <div>
-              Instruments used for real <br /> time QC monitoring
+          {quality.map((item) => (
+            <div key={item.title} className="p-8 flex">
+              <Image src={item.img} width={60} height={20} alt={item.title} />
+
+              <div className="ml-4 mt-1">
+                <div className="font-bold text-xl text-tertiary">
+                  {item.title}
+                </div>
+                <div>{item.content}</div>
+              </div>
             </div>
-          </div>
-          <div className="p-8">
-            <div className="font-bold text-xl text-tertiary">250+</div>
-            <div>Quality Checks</div>
-          </div>
-          <div className="p-8">
-            <div className="font-bold text-xl text-tertiary">15+</div>
-            <div>
-              Quality indicator monitored <br /> on daily basis
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

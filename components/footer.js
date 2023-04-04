@@ -8,8 +8,8 @@ export default function Footer() {
     <div>
       <div className="grid grid-cols-4 text-white bg-tertiary px-[15%] pt-5 ">
         <div className="">
-          <div className="font-bold text-lg p-4 pb-1">Patients</div>
-          <ul className="p-4 font-semibold text-xs">
+          <div className="font-bold text-lg p-4 pl-0 pb-1">Patients</div>
+          <ul className="p-4 pl-0 font-semibold text-xs">
             <li className="py-1">
               <Link href="/">Book a Test</Link>
             </li>

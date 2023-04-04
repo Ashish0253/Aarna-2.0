@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HealthScans() {
   return (
-    <div className="bg-white border-2 border-transparent rounded-2xl mx-[15%] my-14 pb-10 shadow-xl">
+    <div className="bg-white border-2 border-transparent rounded-2xl mx-[15%]  my-14 pb-10 shadow-xl">
       <div className="text-2xl font-bold text-black px-10 py-4 pt-8 ">
         Health Scans
       </div>

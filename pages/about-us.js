@@ -1,3 +1,6 @@
+import Image from "next/image";
+// import { ourVision } from "../public";
+
 export default function AboutUs() {
   return (
     <div>
@@ -25,7 +28,13 @@ export default function AboutUs() {
             scrambled it to make a type specimen book.
           </div>
         </div>
-        <div></div>
+        <div>
+          {/* <img
+            src="/ourVision.svg"
+            alt="our vision"
+            className="w-[296px] h-[296]"
+          /> */}
+        </div>
       </section>
       <section>
         <div>Our Values</div>
