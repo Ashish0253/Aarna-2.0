@@ -3,7 +3,6 @@ export const Tests = [
     title: "Pregnancy Check Up",
     time: "Daily, 2 HRS",
     specimen: "SERUM",
-    contains: ["Complete Hemogram"],
     price: "799",
     type: "test",
   },

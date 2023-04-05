@@ -8,6 +8,8 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { MdDownloadForOffline } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
+import { filters } from "../constants/filters";
+
 export default function BookATest() {
   const [first, setFirst] = useState(true);
   const [second, setSecond] = useState(true);
@@ -35,6 +37,14 @@ export default function BookATest() {
           <div className="p-8 border-b-2 rounded-t-xl border-gray-300 bg-white text-lg font-semibold">
             Filters
           </div>
+          {/* {filters.map((filter) => {
+            return (
+              <div key={filter.title}>
+                <div>{filter.title}</div>
+              </div>
+            );
+          })} */}
+
           <div className="p-8 border-b-2 border-gray-300  bg-white ">
             <div className="flex text-lg font-semibold justify-between">
               Sort list by{" "}
@@ -271,17 +281,21 @@ export default function BookATest() {
                   <BsCurrencyRupee className="my-1" /> {item.price}
                 </div>
 
-                <div className="text-xs flex border-t-2 pt-4 mt-4 border-dashed border-gray-200">
-                  <button className=" text-white border-2 border-transparent shadow-lg rounded-xl px-2 py-1 m-1 bg-primary">
-                    Buy Now
-                  </button>{" "}
-                  <button className="flex border-2 border-transparent shadow-lg rounded-xl px-2 py-1 m-1">
-                    {/* <HiOutlineShoppingBag /> */}
-                    Add to Cart
-                  </button>
+                <div className="text-xs flex justify-between border-t-2 pt-4 mt-4 border-dashed border-gray-200">
+                  <div className="flex">
+                    <button className=" text-white border-2 border-transparent shadow-lg rounded-xl px-2 py-1 m-1 bg-primary">
+                      Buy Now
+                    </button>{" "}
+                    <button className="flex border-2 border-transparent shadow-lg rounded-xl px-2 py-1 m-1">
+                      <div className="mx-[2px]">
+                        <HiOutlineShoppingBag size={13} />
+                      </div>
+                      Add to Cart
+                    </button>
+                  </div>
                   <Link
                     href="/"
-                    className=" flex text-xs px-2 text-[#12A7A7] font-medium py-2 m-1 pl-8"
+                    className=" flex text-xs px-2 text-[#12A7A7] font-medium py-2 m-1 "
                   >
                     <MdDownloadForOffline className="m-[1px]" />
                     Download Report

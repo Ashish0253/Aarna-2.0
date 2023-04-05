@@ -5,7 +5,14 @@ export default function AboutUs() {
   return (
     <div>
       <section className="p-10 grid grid-cols-2">
-        <div></div>
+        <div className="flex justify-end pr-4">
+          <Image
+            src="/Rectangle 20.svg"
+            alt="rectangle"
+            width={300}
+            height={20}
+          />
+        </div>
         <div className="p-4">
           <div className="font-bold text-primary text-xl p-2">Our Mission</div>
           <div className="p-2 text-base">
@@ -28,12 +35,13 @@ export default function AboutUs() {
             scrambled it to make a type specimen book.
           </div>
         </div>
-        <div>
-          {/* <img
-            src="/ourVision.svg"
+        <div className="flex justify-start pl-4">
+          <Image
+            src="/Rectangle 20.svg"
             alt="our vision"
-            className="w-[296px] h-[296]"
-          /> */}
+            width={300}
+            height={20}
+          />
         </div>
       </section>
       <section>
@@ -44,15 +52,15 @@ export default function AboutUs() {
           <div className="text-2xl font-bold text-primary pt-8 pb-4 ">
             Ethos
           </div>
-          <div className="flex justify-start  text-sm font-semibold text-primary">
-            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4 hover:bg-secondary hover:text-white ease-out">
+          <div className="flex justify-start  text-xs font-semibold text-primary">
+            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4 hover:bg-tertiary hover:text-white ease-out">
               Board of Directors
             </button>
-            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4 hover:bg-secondary hover:text-white ease-out">
+            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4 hover:bg-tertiary hover:text-white ease-out">
               {" "}
               Senior Management
             </button>
-            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4  hover:bg-secondary hover:text-white ease-out">
+            <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-4  hover:bg-tertiary hover:text-white ease-out">
               Administration
             </button>
           </div>

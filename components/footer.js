@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { footerLinks } from "../constants/footer";
 
 import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 
@@ -7,87 +8,24 @@ export default function Footer() {
   return (
     <div>
       <div className="grid grid-cols-4 text-white bg-tertiary px-[15%] pt-5 ">
-        <div className="">
-          <div className="font-bold text-lg p-4 pl-0 pb-1">Patients</div>
-          <ul className="p-4 pl-0 font-semibold text-xs">
-            <li className="py-1">
-              <Link href="/">Book a Test</Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Nearest Centre
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Download Report
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Health Scans
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Promotions & Discounts
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Our Labs
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Quality
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Our Departments
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="">
-          <div className="font-bold text-lg p-4 pb-1">About Us</div>
-          <ul className="p-4 font-semibold text-xs">
-            <li className="py-1">
-              <Link href="/about-us/our-journey">Our Journey</Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Vision, Mission & Values
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Our Team
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Our Network
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/about-us/logistics-strength" className="py-1">
-                Logistics Strength
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/about-us/csr" className="py-1">
-                CSR
-              </Link>
-            </li>
-            <li className="py-1">
-              <Link href="/" className="py-1">
-                Career
-              </Link>
-            </li>
-          </ul>
-        </div>
+        {footerLinks.map((footerLink, index) => (
+          <div
+            key={footerLink.title}
+            className={`${index !== footerLinks.length - 1 ? "" : "pl-4"}`}
+          >
+            <div className="font-bold text-lg p-4 pl-0 pb-1">
+              {footerLink.title}
+            </div>
+            <ul className="p-4 pl-0 font-semibold text-xs">
+              {footerLink.links.map((item) => (
+                <li key={item.name} className="py-1">
+                  <Link href={item.link}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+
         <div className="col-span-2 grid justify-end">
           <div>
             <Image
