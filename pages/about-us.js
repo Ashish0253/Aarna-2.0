@@ -1,9 +1,18 @@
+import Breadcrumb from "../components/Breadcrumb";
 import Image from "next/image";
 // import { ourVision } from "../public";
 
 export default function AboutUs() {
+  const breadcrumbData = [
+    { title: "Home", link: "/" },
+    {
+      title: "About Us",
+      link: "/about-us",
+    },
+  ];
   return (
     <div>
+      <Breadcrumb links={breadcrumbData} />
       <section className="p-10 grid grid-cols-2">
         <div className="flex justify-end pr-4">
           <Image

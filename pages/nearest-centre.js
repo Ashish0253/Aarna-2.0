@@ -2,11 +2,24 @@ import { BiMapAlt } from "react-icons/bi";
 import { centres } from "@/constants/centres";
 import { SlLocationPin } from "react-icons/sl";
 import { BsTelephone } from "react-icons/bs";
+import Breadcrumb from "@/components/Breadcrumb";
 // import { MdLocationOn } from "react-icons/md";
 
 export default function Centres() {
+  const breadcrumbData = [
+    {
+      title: "Home",
+      link: "/",
+    },
+    {
+      title: "Centres",
+      link: "/nearest-centre",
+    },
+  ];
+
   return (
     <div className="bg-[#f2f2f2]">
+      <Breadcrumb links={breadcrumbData} />
       <div className="flex justify-start  text-sm font-semibold text-primary mx-[15%] my-[2%]">
         <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white hover:bg-tertiary hover:text-white ease-out">
           Doiwala

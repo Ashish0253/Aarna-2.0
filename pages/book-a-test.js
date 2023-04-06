@@ -9,6 +9,7 @@ import { MdDownloadForOffline } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 import { filters } from "../constants/filters";
+import Breadcrumb from "../components/Breadcrumb";
 
 export default function BookATest() {
   const [first, setFirst] = useState(true);
@@ -28,9 +29,21 @@ export default function BookATest() {
     }
   }
 
+  const breadcrumbData = [
+    {
+      title: "Home",
+      link: "/",
+    },
+    {
+      title: "Test & Packages",
+      link: "/book-a-test",
+    },
+  ];
+
   return (
     <div>
       <Carousel />
+      <Breadcrumb links={breadcrumbData} />
       <div className="grid grid-cols-4 mx-[15%] my-8 gap-8 bg-[#f2f2f2]">
         {/* Filters Section  */}
         <div className="border border-transparent rounded-xl h-full">
