@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Breadcrumb = ({ links }) => {
   const length = links.length;
-  console.log(length);
+  // console.log(length);
   return (
     <section>
       <div className="flex mx-[15%] my-8 text-sm font-bold">

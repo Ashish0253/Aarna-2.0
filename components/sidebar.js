@@ -8,7 +8,10 @@ export default function Sidebar({ sidebar }) {
         <div className="my-10 grid grid-rows-4 justify-end fixed right-2 bg-white h-[360px] border-2 border-transparent rounded-lg shadow-lg z-10 text-xs text-primary font-bold">
           <div className="">
             <div className="border-b-2 border-gray-200 grid justify-items-center p-2">
-              <Link href="/centres" className="grid justify-items-center">
+              <Link
+                href="/nearest-centre"
+                className="grid justify-items-center"
+              >
                 <div>
                   <Image
                     src="/sidebar/LOCATION 1.svg"
@@ -51,16 +54,18 @@ export default function Sidebar({ sidebar }) {
               </Link>
             </div>
             <div className=" grid justify-items-center p-2">
-              <div>
-                <Image
-                  src="/sidebar/DOWNLOAD REPORT 2.svg"
-                  alt=""
-                  width={40}
-                  height={40}
-                />
-              </div>
-              <div className="">Download </div>
-              <div> Report</div>
+              <Link href="/" className="grid justify-items-center">
+                <div>
+                  <Image
+                    src="/sidebar/DOWNLOAD REPORT 2.svg"
+                    alt=""
+                    width={40}
+                    height={40}
+                  />
+                </div>
+                <div className="">Download </div>
+                <div> Report</div>
+              </Link>
             </div>
           </div>
         </div>

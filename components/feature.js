@@ -1,6 +1,7 @@
 import Image from "next/image";
 import useIntersection from "@/hooks/useIntersection";
 import { useRef } from "react";
+import Link from "next/link";
 
 export default function Feature({ setSidebar, ref3 }) {
   // const ref2 = useRef(null);
@@ -15,7 +16,10 @@ export default function Feature({ setSidebar, ref3 }) {
       className="bg-tertiary text-white font-semibold text-md px-[18%] py-4 "
     >
       <div className=" grid grid-cols-4 mx-[10%]">
-        <div className="grid justify-items-end pr-7 border-r-2 ">
+        <Link
+          href="/book-a-test"
+          className="grid justify-items-end pr-7 border-r-2 "
+        >
           <Image
             src="/BOOK A TEST 1.svg"
             alt=""
@@ -24,8 +28,8 @@ export default function Feature({ setSidebar, ref3 }) {
             className="p-2 "
           />
           Book a Test
-        </div>
-        <div className="grid justify-items-center border-r-2 ">
+        </Link>
+        <Link href="/" className="grid justify-items-center border-r-2 ">
           <Image
             src="/UPLOAD PRESCRIPTION 1.svg"
             alt=""
@@ -34,8 +38,8 @@ export default function Feature({ setSidebar, ref3 }) {
             className="p-2"
           />
           Upload Description
-        </div>
-        <div className="grid justify-items-center border-r-2">
+        </Link>
+        <Link href="/" className="grid justify-items-center border-r-2">
           <Image
             src="/DOWNLOAD REPORT 1.svg"
             alt=""
@@ -44,8 +48,8 @@ export default function Feature({ setSidebar, ref3 }) {
             className="p-2"
           />
           Download Report
-        </div>
-        <div className="grid justify-items-start pl-7 ">
+        </Link>
+        <Link href="/nearest-centre" className="grid justify-items-start pl-7 ">
           <Image
             src="/NEAREST CENTRE 1.svg"
             alt=""
@@ -54,7 +58,7 @@ export default function Feature({ setSidebar, ref3 }) {
             className="p-2"
           />
           Nearest Centre
-        </div>
+        </Link>
       </div>
     </div>
   );

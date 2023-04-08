@@ -20,7 +20,7 @@ export default function Centres() {
   return (
     <div className="bg-[#f2f2f2]">
       <Breadcrumb links={breadcrumbData} />
-      <div className="flex justify-start  text-sm font-semibold text-primary mx-[15%] my-[2%]">
+      <div className="flex justify-start text-xs font-semibold text-primary mx-[15%] my-[2%]">
         <button className="border-2 border-primary rounded-3xl px-4 py-1 mr-2 bg-white hover:bg-tertiary hover:text-white ease-out">
           Doiwala
         </button>
