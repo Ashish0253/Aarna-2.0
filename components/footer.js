@@ -6,8 +6,8 @@ import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <div>
-      <div className="flex-row-reverse grid sm:grid-cols-4 text-white bg-tertiary px-[15%] pt-5 ">
+    <div className="flex-row-reverse sm:grid">
+      <div className=" grid sm:grid-cols-4 text-white bg-tertiary px-4 sm:px-[15%]  pt-5 ">
         {footerLinks.map((footerLink, index) => (
           <div
             key={footerLink.title}
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         ))}
 
-        <div className="col-span-2 grid justify-end">
+        <div className="col-span-2 grid justify-start sm:justify-end">
           <div>
             <Image
               src="/AARNA LOGO 1.svg"
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-primary py-2 px-[15%] text-white text-xs font-base">
+      <div className="bg-primary py-2 px-2 sm:px-[15%] text-white text-xs font-base">
         <p>2023 &#169; aarnadiagnosticcentre.com. All rights reserved</p>
         <p>
           CSR | Terms of Use | Privacy Policy | Online Cancellation Policy |

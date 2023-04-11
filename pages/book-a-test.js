@@ -115,9 +115,9 @@ export default function BookATest() {
     <div>
       <Carousel />
       <Breadcrumb links={breadcrumbData} />
-      <div className="grid grid-cols-4 mx-[15%] my-8 gap-8 bg-[#f2f2f2]">
+      <div className="sm:grid grid-cols-4 sm:mx-[15%] my-8 gap-8 bg-[#f2f2f2]">
         {/* Filters Section  */}
-        <div className="border border-transparent rounded-xl h-full">
+        <div className="sm:block hidden border border-transparent rounded-xl h-full">
           <div className="p-8 border-b-2 rounded-t-xl border-gray-300 bg-white text-lg font-semibold">
             Filters
           </div>
@@ -284,7 +284,7 @@ export default function BookATest() {
         </div>
 
         {/* Tests Section  */}
-        <div className="col-span-3 ">
+        <div className=" col-span-3">
           <TestsAndPackages data={tests} />
         </div>
       </div>

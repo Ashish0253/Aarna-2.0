@@ -22,7 +22,7 @@ const TestsAndPackages = ({ data }) => {
     return currentProducts.map((item) => (
       <div
         key={item.title}
-        className="border-2 border-transparent rounded-xl p-4 text-sm shadow-lg bg-white"
+        className="border-2 border-transparent rounded-xl p-4 sm:m-0 m-4  text-sm shadow-lg bg-white"
       >
         <div className="text-lg font-semibold text-primary flex">
           <Image
@@ -73,7 +73,7 @@ const TestsAndPackages = ({ data }) => {
   };
   return (
     <div>
-      <div className="grid grid-cols-2 gap-8 my-0 bg-[#f2f2f2]">
+      <div className="sm:grid grid-cols-2 gap-8 my-0 bg-[#f2f2f2]">
         {renderTestAndPackages()}
       </div>
       <div>
