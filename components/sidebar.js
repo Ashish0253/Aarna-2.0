@@ -5,7 +5,7 @@ export default function Sidebar({ sidebar }) {
   return (
     <div>
       {sidebar && (
-        <div className="my-10 grid grid-rows-4 justify-end fixed right-2 bg-white h-[360px] border-2 border-transparent rounded-lg shadow-lg z-10 text-xs text-primary font-bold">
+        <div className="sm:block hidden my-10 grid-rows-4 justify-end fixed right-2 bg-white h-[360px] border-2 border-transparent rounded-lg shadow-lg z-10 text-xs text-primary font-bold">
           <div className="">
             <div className="border-b-2 border-gray-200 grid justify-items-center p-2">
               <Link

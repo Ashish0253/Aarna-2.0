@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Slider from "react-slick";
 
@@ -75,7 +76,7 @@ function HealthScans() {
   };
 
   return (
-    <div className="bg-[#f8f8f8] p-20 pb-32">
+    <div className=" p-20 pb-32">
       <h1 className=" pl-48 pb-8 text-2xl font-bold text-black">
         Health Scans
       </h1>
@@ -88,7 +89,6 @@ function HealthScans() {
                 key={item.id}
                 className="rounded-xl overflow-hidden text-center drop-shadow-md text-black bg-white pb-5"
               >
-                {/* <Link to={item.page}> */}
                 <img
                   src={item.src}
                   alt={item.alt}

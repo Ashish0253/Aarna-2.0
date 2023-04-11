@@ -13,12 +13,25 @@ export default function Feature({ setSidebar, ref3 }) {
   return (
     <div
       ref={ref3}
-      className="bg-tertiary text-white font-semibold text-md px-[18%] py-4 "
+      className="bg-tertiary text-white font-semibold text-xs sm:text-base sm:px-[18%] py-4 "
     >
-      <div className=" grid grid-cols-4 mx-[10%]">
+      <div className=" grid grid-cols-4 sm:mx-[10%]">
+        <Link href="/" className="grid justify-items-center border-r-2 ">
+          <Image
+            src="/UPLOAD PRESCRIPTION 1.svg"
+            alt=""
+            width={100}
+            height={100}
+            className="p-2 "
+          />
+          <div className="sm:flex justify-items-center grid">
+            <p className="sm:pr-1">Upload</p>
+            <p className="">Description</p>
+          </div>
+        </Link>
         <Link
           href="/book-a-test"
-          className="grid justify-items-end pr-7 border-r-2 "
+          className="grid justify-items-center border-r-2 "
         >
           <Image
             src="/BOOK A TEST 1.svg"
@@ -27,29 +40,12 @@ export default function Feature({ setSidebar, ref3 }) {
             height={100}
             className="p-2 "
           />
-          Book a Test
+          <p>Book a Test</p>
         </Link>
-        <Link href="/" className="grid justify-items-center border-r-2 ">
-          <Image
-            src="/UPLOAD PRESCRIPTION 1.svg"
-            alt=""
-            width={100}
-            height={100}
-            className="p-2"
-          />
-          Upload Description
-        </Link>
-        <Link href="/" className="grid justify-items-center border-r-2">
-          <Image
-            src="/DOWNLOAD REPORT 1.svg"
-            alt=""
-            width={100}
-            height={100}
-            className="p-2"
-          />
-          Download Report
-        </Link>
-        <Link href="/nearest-centre" className="grid justify-items-start pl-7 ">
+        <Link
+          href="/nearest-centre"
+          className="grid justify-items-center border-r-2"
+        >
           <Image
             src="/NEAREST CENTRE 1.svg"
             alt=""
@@ -57,7 +53,23 @@ export default function Feature({ setSidebar, ref3 }) {
             height={100}
             className="p-2"
           />
-          Nearest Centre
+          <div className="sm:flex justify-items-center grid">
+            <p className="sm:pr-1">Nearest</p>
+            <p className="">Centre</p>
+          </div>
+        </Link>
+        <Link href="/" className="grid justify-items-center ">
+          <Image
+            src="/DOWNLOAD REPORT 1.svg"
+            alt=""
+            width={100}
+            height={100}
+            className="p-2"
+          />
+          <div className="sm:flex justify-items-center grid">
+            <p className="sm:pr-1">Download</p>
+            <p className="">Report</p>
+          </div>
         </Link>
       </div>
     </div>

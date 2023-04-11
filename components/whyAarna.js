@@ -80,7 +80,7 @@ export default function WhyAarna() {
           Why Aarna Diagnostic Centre
         </div>
 
-        <div className="grid grid-cols-3">
+        <div className="flex-col grid  sm:grid-cols-3">
           {why.map((item) => (
             <div key={item.title} className="p-8 flex">
               <Image src={item.img} width={60} height={20} alt={item.title} />
@@ -137,7 +137,7 @@ export default function WhyAarna() {
         <div className="font-bold text-2xl py-4 border-b-4 border-black">
           Quality
         </div>
-        <div className="grid grid-cols-3">
+        <div className="flex-col grid  sm:grid-cols-3">
           {quality.map((item) => (
             <div key={item.title} className="p-8 flex">
               <Image src={item.img} width={60} height={20} alt={item.title} />

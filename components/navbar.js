@@ -4,8 +4,8 @@ import { SlLocationPin } from "react-icons/sl";
 
 export default function Navbar() {
   return (
-    <div className="bg-white flex font-bold px-[15%] py-4 text-base">
-      <Link href="/">
+    <div className="bg-white flex font-bold px-[15%] py-4 text-base sm:none ">
+      <Link href="/" className="">
         <Image
           src="/AARNA 1.svg"
           alt="logo"
@@ -14,7 +14,7 @@ export default function Navbar() {
           className=""
         />
       </Link>
-      <div className="flex ml-7 pt-2 font-bold justify-between">
+      <div className="  hidden sm:flex ml-7 pt-2 font-bold justify-between">
         <Link href="/book-a-test" className="pt-2 px-4">
           Book a Test
         </Link>

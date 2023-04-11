@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="bg-tertiary text-white font-bold px-[28%] text-base">
+    <div className="bg-tertiary text-white font-bold sm:px-[28%] text-xs sm:text-base">
       <div className=" container flex justify-around p-3">
         <Link href="/" className="">
           DOCTORS
