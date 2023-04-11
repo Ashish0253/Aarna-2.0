@@ -24,43 +24,29 @@ const TestsAndPackages = ({ data }) => {
         key={item.title}
         className="border-2 border-transparent rounded-xl p-4 text-sm shadow-lg bg-white"
       >
-        <div className="text-base font-semibold text-primary flex">
+        <div className="text-lg font-semibold text-primary flex">
           <Image
             src="/microscope 1.svg"
             alt="microscope"
             width={30}
             height={30}
-            className="mx-1"
+            className="mx-2"
           />
           {item.title}
         </div>
         <div className="p-3">{item.time}</div>
-        <div className="flex text-xs px-3">
-          Specimen: <div className="font-semibold"> {item.specimen} </div>
+        <div className="flex text-sm px-3">
+          Specimen:{" "}
+          <span className="font-semibold px-1"> {item.specimen} </span>
         </div>
-        <div className="flex justify-end font-semibold px-3">
+        <div className="flex text-base justify-end font-semibold px-3">
           <BsCurrencyRupee className="my-1" /> {item.price}
         </div>
 
-        <div className="text-xs flex justify-between border-t-2 pt-4 mt-4 border-dashed border-gray-200">
-          <div className="flex">
-            <button className=" text-white border-2 border-transparent shadow-lg rounded-xl px-2 py-1 m-1 bg-primary">
-              Buy Now
-            </button>{" "}
-            <button className="flex border-2 border-transparent shadow-lg rounded-xl px-2 py-1 m-1">
-              <div className="mx-[2px]">
-                <HiOutlineShoppingBag size={13} />
-              </div>
-              Add to Cart
-            </button>
-          </div>
-          <Link
-            href="/"
-            className=" flex text-xs px-2 text-[#12A7A7] font-medium py-2 m-1 "
-          >
-            <MdDownloadForOffline className="m-[1px]" />
-            Download Report
-          </Link>
+        <div className="text-sm flex justify-end border-t-2 pt-4 mt-4 border-dashed border-gray-200">
+          <button className=" text-white border-2 border-transparent shadow-lg rounded-xl px-3 py-2 m-1 bg-primary">
+            Book Now
+          </button>{" "}
         </div>
       </div>
     ));
