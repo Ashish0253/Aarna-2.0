@@ -77,9 +77,11 @@ export default function Centres() {
               </div>
 
               <div className="flex justify-end">
-                <button className="border-2 border-primary text-primary font-semibold rounded-xl px-8 py-1 flex">
-                  <BiMapAlt className="m-1" /> View on Map
-                </button>
+                <a href={item.link} target="_blank">
+                  <button className="border-2 border-primary text-primary font-semibold rounded-xl px-8 py-1 flex">
+                    <BiMapAlt className="m-1" /> View on Map
+                  </button>
+                </a>
               </div>
             </div>
           );
