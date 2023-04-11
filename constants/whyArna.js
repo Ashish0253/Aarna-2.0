@@ -65,4 +65,9 @@ export const offer = [
     content: "20% off for senior Citizen",
     img: "/SENIOR CITIZEN 1.svg",
   },
+  {
+    title: 4,
+    content: "Loyalty Card Program",
+    img: "/SENIOR CITIZEN 1 (1).svg",
+  },
 ];
