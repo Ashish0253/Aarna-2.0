@@ -112,7 +112,7 @@ function HealthScans() {
                 {/* </Link> */}
                 <button
                   to={item.page}
-                  className=" mt-6 border-transparent rounded-lg px-4 py-0 border-2 bg-[#1ebaba] text-white "
+                  className=" mt-6 text-lg border-transparent rounded-lg px-8 py-0 border-2 bg-[#1ebaba] text-white "
                 >
                   Book Now
                 </button>
