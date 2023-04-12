@@ -82,12 +82,12 @@ export default function HealthPackages() {
       <div className="relative h-full">
         <RenderArrows />
 
-        <Slider ref={slider} {...settings} className="px-8 my-4">
+        <Slider ref={slider} {...settings} className="sm:px-8 px-4 my-4">
           {healthPackages.map((item) => {
             return (
               <div
                 key={item.title}
-                className=" mx-2 relative  text-white h-[330px] h-"
+                className=" mx-0 relative  text-white h-[330px] h-"
               >
                 <div className="border-2 p-5 rounded-2xl bg-tertiary pb-1 h-[300px]">
                   <div className="text-2xl font-bold p-2 h-20">

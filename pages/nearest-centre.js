@@ -37,7 +37,7 @@ export default function Centres() {
           Dehradun
         </button>
       </div>
-      <div className="flex px-6 py-2 bg-white rounded-3xl sm:mx-[15%] mx-4">
+      <div className="flex px-6 py-2 bg-white rounded-2xl sm:mx-[15%] mx-4">
         <ImLocation className="w-8 h-8 text-green-600 mx-2" />
         <input
           placeholder="Search Location"
@@ -50,10 +50,10 @@ export default function Centres() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.868799207304!2d78.02524661493497!3d30.297796481790943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092978849052d9%3A0xe74fb09a1c56420e!2sAarna%20Diagnostic%20Centre!5e0!3m2!1sen!2sin!4v1679285323694!5m2!1sen!2sin"
           // width="70%"
           // height="350"
-          allowFullScreen="yes"
+          allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="sm:mx-[15%] sm:w-[1070px] w-[360px] sm:h-[350px] h-[200px] mx-4 my-6 rounded-xl shadow-lg"
+          className="sm:mx-[15%] sm:w-[1070px] w-[90%] sm:h-[350px] h-[200px] mx-4 my-6 rounded-xl shadow-lg"
         ></iframe>
       </div>
 

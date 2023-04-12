@@ -22,7 +22,7 @@ export default function Feature({ setSidebar, ref3 }) {
             alt=""
             width={100}
             height={100}
-            className="p-2 "
+            className="p-2"
           />
           <div className="sm:flex justify-items-center grid">
             <p className="">Upload</p>
@@ -44,7 +44,7 @@ export default function Feature({ setSidebar, ref3 }) {
         </Link>
         <Link
           href="/nearest-centre"
-          className="grid justify-items-center border-r-2"
+          className="grid justify-items-center border-r-2 "
         >
           <Image
             src="/NEAREST CENTRE 1.svg"
@@ -64,7 +64,7 @@ export default function Feature({ setSidebar, ref3 }) {
             alt=""
             width={100}
             height={100}
-            className="p-2"
+            className="p-2 "
           />
           <div className="sm:flex justify-items-center grid">
             <p className="sm:pr-1">Download</p>
