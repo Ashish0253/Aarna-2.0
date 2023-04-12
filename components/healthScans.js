@@ -77,17 +77,18 @@ function HealthScans() {
 
   return (
     <div className=" p-20 pb-32">
-      <h1 className=" pl-48 pb-8 text-2xl font-bold text-black">
+      
+      <div className="relative py-8 mx-[11%] bg-white rounded-xl shadow-md">
+      <h1 className=" text-start pl-12 pb-2 text-2xl font-bold text-black">
         Health Scans
       </h1>
-      <div className="relative mx-[10%]">
         <RenderArrows />
         <Slider ref={slider} {...settings} className="px-8 my-4">
           {content.map((item) => {
             return (
               <div
                 key={item.id}
-                className="rounded-xl overflow-hidden text-center drop-shadow-md text-black bg-white pb-5"
+                className="rounded-xl overflow-hidden text-center drop-shadow-md text-black bg-[#f8f8f8] pb-5"
               >
                 <img
                   src={item.src}
@@ -104,7 +105,9 @@ function HealthScans() {
                   </span>{" "}
                   {item.price3}
                 </h3>
+                <div className= " hidden sm:block">
                 <p className="text-sm px-4">{item.description}</p>
+                </div>
                 {/* <p className="p-5 scan-desc">{item.description}</p> */}
                 {/* </Link> */}
                 <button
