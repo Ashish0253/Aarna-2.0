@@ -75,7 +75,7 @@ export default function HealthPackages() {
   };
 
   return (
-    <div className=" bg-white border-2 border-transparent rounded-2xl  mx-[15%] my-20 pb-10 shadow-lg">
+    <div className=" bg-white border-2 border-transparent rounded-2xl sm:mx-[15%] mx-4 my-20 pb-10 shadow-lg">
       <div className="text-2xl font-bold text-black px-10 pt-10 pb">
         Health Packages
       </div>

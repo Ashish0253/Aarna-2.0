@@ -8,7 +8,7 @@ const Breadcrumb = ({ links }) => {
   // console.log(length);
   return (
     <section>
-      <div className="flex mx-[15%] my-8 text-sm font-bold">
+      <div className="flex sm:mx-[15%] mx-4 my-8 text-sm font-bold">
         {links.map((link, index) => {
           return (
             <div key={link.title} className={`pr-2 flex`}>

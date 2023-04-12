@@ -2,11 +2,12 @@ import Carousel from "@/components/carousel";
 import { Tests } from "@/constants/tests";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsCurrencyRupee } from "react-icons/bs";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { MdDownloadForOffline } from "react-icons/md";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { ImSearch } from "react-icons/im";
 
 import { filters } from "../constants/filters";
 import Breadcrumb from "../components/Breadcrumb";
@@ -115,6 +116,7 @@ export default function BookATest() {
     <div>
       <Carousel />
       <Breadcrumb links={breadcrumbData} />
+      <SearchBar data={Tests} setData={setTests} />
       <div className="sm:grid grid-cols-4 sm:mx-[15%] my-8 gap-8 bg-[#f2f2f2]">
         {/* Filters Section  */}
         <div className="sm:block hidden border border-transparent rounded-xl h-full">
@@ -291,3 +293,44 @@ export default function BookATest() {
     </div>
   );
 }
+
+const SearchBar = ({ data, setData }) => {
+  const [query, setQuery] = useState("");
+
+  const [filteredData, setFilteredData] = useState([]);
+
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+  };
+
+  useEffect(() => {
+    const debounceTimer = setTimeout(() => {
+      const filteredData = data.filter((entry) => {
+        return entry.title.toLowerCase().includes(query.toLowerCase());
+      });
+      setData(filteredData);
+
+      query === "" ? setData(data) : setData(filteredData);
+    }, 500);
+
+    return () => clearTimeout(debounceTimer);
+  }, [query, data, setData, filteredData]);
+
+  // const handleSearch = () => {};
+
+  return (
+    <div className="flex justify-center mx-3">
+      <div className="border-2 border-transparent rounded-md p-2 bg-white flex justify-between w-full  sm:w-[500px]">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={query}
+          className="outline-none w-[450px]"
+          onChange={handleInputChange}
+        />
+        <ImSearch className="m-1" />
+      </div>
+      {/* <button onClick={() => handleSearch()}>Search</button> */}
+    </div>
+  );
+};
