@@ -28,7 +28,7 @@ export default function Navbar() {
           {" "}
           <SlLocationPin size={15} className="my-2  text-primary inline" />
           <input
-            className="border-b-2 outline-none border-primary rounded-lg px-2 -py-1 text-xs focus:border-primary w-[120px]"
+            className="border-b-2 outline-none border-primary rounded-lg px-2 s text-xs focus:border-primary w-[120px]"
             placeholder="Search Location..."
           />
         </div>
