@@ -25,8 +25,8 @@ export default function Feature({ setSidebar, ref3 }) {
             className="p-2 "
           />
           <div className="sm:flex justify-items-center grid">
-            <p className="sm:pr-1">Upload</p>
-            <p className="">Description</p>
+            <p className="">Upload</p>
+            <p className="sm:pl-1">Description</p>
           </div>
         </Link>
         <Link
