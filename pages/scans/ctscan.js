@@ -54,6 +54,59 @@ The contrast material is especially useful when testing soft tissue, as it block
             <ScanForm scan="CT-Scan"></ScanForm>
         </div>
       </div>
+
+      <div className="sm:mx-20 lg:mx-24 xl:mx-44 bg-white rounded-xl overflow-hidden mb-20 shadow-lg">
+        
+<div class="relative overflow-x-auto sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase dark:text-black">
+            <tr>
+                <th scope="col" class="px-6 py-3 bg-gray-50 dark:bg-[#fcbe57]">
+                    Scan Name
+                </th>
+                <th scope="col" class="px-6 py-3 dark:bg-[#fcbe57]">
+                    Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-600 dark:bg-white">
+                    Heart CT Scan
+                </th>
+                <td class="px-6 py-4 dark:text-gray-600">
+                ₹500
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-600 dark:bg-white">
+                    Brain CT Scan
+                </th>
+                <td class="px-6 py-4 dark:text-gray-600">
+                ₹800
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-600 dark:bg-white">
+                    Back CT Scan
+                </th>
+                <td class="px-6 py-4 dark:text-gray-600">
+                ₹1200
+                </td>
+            </tr>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-600 dark:bg-white">
+                    Complete Body CT Scan
+                </th>
+                <td class="px-6 py-4 dark:text-gray-600">
+                ₹1600
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+      </div>
         </div>
     )
 }

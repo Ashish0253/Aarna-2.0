@@ -64,34 +64,34 @@ export default function ecgtest() {
         </thead>
         <tbody>
             <tr class="border-b border-gray-200 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-400 dark:bg-white">
-                    Heaert CT Scan
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-600 dark:bg-white">
+                    Heart CT Scan
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-6 py-4 dark:text-gray-600">
                 ₹500
                 </td>
             </tr>
             <tr class="border-b border-gray-200 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-400 dark:bg-white">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-600 dark:bg-white">
                     Brain CT Scan
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-6 py-4 dark:text-gray-600">
                 ₹800
                 </td>
             </tr>
             <tr class="border-b border-gray-200 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-400 dark:bg-white">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-600 dark:bg-white">
                     Back CT Scan
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-6 py-4 dark:text-gray-600">
                 ₹1200
                 </td>
             </tr>
             <tr class="border-b border-gray-200 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-400 dark:bg-white">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-gray-600 dark:bg-white">
                     Complete Body CT Scan
                 </th>
-                <td class="px-6 py-4">
+                <td class="px-6 py-4 dark:text-gray-600">
                 ₹1600
                 </td>
             </tr>
