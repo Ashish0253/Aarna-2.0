@@ -99,7 +99,7 @@ export default function SearchTestAndPackages() {
                     key={item.name}
                     className="border-2 border-transparent rounded-md mx-2 grid justify-center"
                   >
-                    <img
+                    <Image
                       src={item.icon}
                       alt={item.name}
                       width={200}
