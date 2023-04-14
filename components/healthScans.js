@@ -77,11 +77,10 @@ function HealthScans() {
 
   return (
     <div className=" sm:px-20 px-4 pt-20">
-      
       <div className="relative py-8 sm:mx-[11%] bg-white rounded-xl shadow-md">
-      <h1 className=" text-start pl-12 pb-2 text-2xl font-bold text-black">
-        Health Scans
-      </h1>
+        <h1 className=" text-start pl-12 pb-2 text-2xl font-bold text-black">
+          Health Scans
+        </h1>
         <RenderArrows />
         <Slider ref={slider} {...settings} className="px-8 my-4">
           {content.map((item) => {
@@ -95,7 +94,7 @@ function HealthScans() {
                   alt={item.alt}
                   className="border-b-4 border-[#0aa1af]"
                 />
-                <h3 className="py-3 font-semibold text-lg text-black">
+                <h3 className="py-3 text-2xl text-black font-bold">
                   {item.title}
                 </h3>
                 <h3 className="font-bold text-lg text-[#0aa1af] py-1">
@@ -105,14 +104,14 @@ function HealthScans() {
                   </span>{" "}
                   {item.price3}
                 </h3>
-                <div className= " hidden sm:block">
-                <p className="text-sm px-4">{item.description}</p>
-                </div>
+                {/* <div className=" hidden sm:block">
+                  <p className="text-sm px-4">{item.description}</p>
+                </div> */}
                 {/* <p className="p-5 scan-desc">{item.description}</p> */}
                 {/* </Link> */}
                 <button
                   to={item.page}
-                  className=" mt-6 border-transparent rounded-lg px-4 py-0 border-2 bg-[#1ebaba] text-white "
+                  className=" mt-6 border-transparent rounded-xl px-10 py-2 border-2 bg-[#f27d27] text-white font-bold "
                 >
                   Book Now
                 </button>

@@ -155,7 +155,7 @@ const BookTestForm = ({ selectedTest }) => {
 
         <button
           type="submit"
-          className="border-2 border-transparent my-4 py-2 px-4 bg-primary text-white rounded-lg"
+          className="border-2 border-transparent my-4 py-2 px-4 bg-quaternary font-bold text-white rounded-lg"
         >
           Book Now
         </button>

@@ -72,7 +72,7 @@ export default function HealthPackages() {
                     {item.title}
                   </div>
                   <div className="p-2 font-semibold">
-                    <h4 className="border-2 text-sm border-transparent bg-[#FFD500] px-2 rounded-2xl text-black">
+                    <h4 className="border-2 text-sm border-transparent bg-[#FFD500] px-2 rounded-2xl text-black w-[80%]">
                       Includes: {item.parameters} parameters
                     </h4>
                     <ul className="px-3 py-1 text-sm font-normal">
@@ -86,14 +86,14 @@ export default function HealthPackages() {
                     <div className="ml-6 ">&#8377; {item.offerPrice}</div>
                   </div>
                   <div className="flex justify-between ">
-                    <div className="text-xs underline py-1">Know More</div>
+                    <div className="text-xs px-3 underline py-1">Know More</div>
                     {/* <div className="border-2 font-bold border-transparent text-black text-xs bg-[#FFD500] py-1 px-4 rounded-2xl">
                       39 parameter(s) covered
                     </div> */}
                   </div>
                 </div>
 
-                <div className="bg-primary border-2 border-transparent font-semibold rounded-2xl flex justify-center text-base py-2 w-[90%] absolute left-4 bottom-2">
+                <div className="bg-[#f27d27] border-2 border-transparent font-semibold rounded-2xl flex justify-center text-base py-2 w-[90%] absolute left-4 bottom-2">
                   Book Now
                 </div>
               </div>

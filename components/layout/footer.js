@@ -13,10 +13,10 @@ export default function Footer() {
             key={footerLink.title}
             className={`${index !== footerLinks.length - 1 ? "" : "pl-4"}`}
           >
-            <div className="font-bold text-lg p-4 pl-0 pb-1">
+            <div className="font-bold text-xl p-4 pl-0 pb-1">
               {footerLink.title}
             </div>
-            <ul className="p-4 pl-0 font-semibold text-xs">
+            <ul className="p-4 pl-0 font-semibold text-sm">
               {footerLink.links.map((item) => (
                 <li key={item.name} className="py-1">
                   <Link href={item.link}>{item.name}</Link>
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-primary py-2 px-2 sm:px-[15%] text-white text-xs font-base">
+      <div className="bg-[#FFD500] py-2 px-2 sm:px-[15%] text-black text-xs font-base">
         <p>2023 &#169; aarnadiagnosticcentre.com. All rights reserved</p>
         <p>
           CSR | Terms of Use | Privacy Policy | Online Cancellation Policy |

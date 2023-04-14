@@ -58,16 +58,16 @@ export default function WhyAarna() {
   return (
     <div className="sm:mx-[15%] mx-4">
       <div className=" border-2 border-transparent rounded-2xl my-10 pb-3 text-black">
-        <div className="font-bold text-2xl py-4 border-b-4 border-black">
+        <div className="font-bold text-2xl py-4 border-b-2 text-tertiary border-tertiary">
           Why Aarna Diagnostic Centre
         </div>
 
         <div className="flex-col grid  sm:grid-cols-3">
           {why.map((item) => (
             <div key={item.title} className="p-8 flex">
-              <Image src={item.img} width={60} height={20} alt={item.title} />
+              <Image src={item.img} width={70} height={20} alt={item.title} />
               <div className="ml-4 mt-1">
-                <div className="font-bold text-xl text-tertiary">
+                <div className="font-bold text-2xl text-quaternary">
                   {item.title}
                 </div>
                 <div>{item.content}</div>
@@ -76,12 +76,13 @@ export default function WhyAarna() {
           ))}
         </div>
 
-        <div className="text-tertiary flex justify-end underline text-base p-1 font-semibold m-4">
+        {/* <div className="text-tertiary flex justify-end underline text-base p-1 font-semibold m-4">
           <button> Explore &gt;&gt;</button>{" "}
-        </div>
+        </div> */}
       </div>
 
-      <div className="border-2 border-transparent rounded-2xl  my-10 pb-3 text-black">
+      {/* Offer And Anouncement      */}
+      {/* <div className="border-2 border-transparent rounded-2xl  my-10 pb-3 text-black">
         <div className="font-bold text-2xl py-4 border-b-4 border-black">
           Offer & Anouncement
         </div>
@@ -113,19 +114,19 @@ export default function WhyAarna() {
         <div className="text-tertiary flex justify-end underline text-base p-1 font-semibold m-4">
           <button> View All</button>{" "}
         </div>
-      </div>
+      </div> */}
 
       <div className="border-2 border-transparent rounded-2xl my-10 pb-3 text-black">
-        <div className="font-bold text-2xl py-4 border-b-4 border-black">
+        <div className="font-bold text-2xl text-tertiary py-4 border-b-2 border-tertiary">
           Quality
         </div>
-        <div className="flex-col grid  sm:grid-cols-3">
+        <div className="flex-col grid sm:grid-cols-3">
           {quality.map((item) => (
             <div key={item.title} className="p-8 flex">
-              <Image src={item.img} width={60} height={20} alt={item.title} />
+              <Image src={item.img} width={70} height={20} alt={item.title} />
 
               <div className="ml-4 mt-1">
-                <div className="font-bold text-xl text-tertiary">
+                <div className="font-bold text-2xl text-quaternary">
                   {item.title}
                 </div>
                 <div>{item.content}</div>
