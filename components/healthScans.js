@@ -12,6 +12,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { ButtonBase } from "@mui/material";
 // import { Link } from "react-router-dom";
 import Image from "next/image";
+import Link from "next/link";
 
 function HealthScans() {
   const slider = React.useRef(null);
@@ -110,13 +111,14 @@ function HealthScans() {
                 </div>
                 {/* <p className="p-5 scan-desc">{item.description}</p> */}
                 {/* </Link> */}
+                <Link href={item.page}>
                 <button
                   to={item.page}
                   className=" mt-6 text-lg border-transparent rounded-lg px-8 py-0 border-2 bg-[#1ebaba] text-white "
                 >
                   Book Now
                 </button>
-
+                </Link>
                 {/* <div className="border-transparent rounded-lg px-4 py-1 mt-4 border-2 bg-[#1ebaba] text-white hover:scale-105">
                   
                 </div> */}

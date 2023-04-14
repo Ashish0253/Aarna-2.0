@@ -1,7 +1,7 @@
 const content = [
   {
     id: 1,
-    page: "/ctscan",
+    page: "/scans/ctscan",
     src: "https://helma.healthians.com/stationery/mailer-assets/61bc3c2d80996.png",
     atl: "",
     title: "CT Scan",
@@ -13,7 +13,7 @@ const content = [
   },
   {
     id: 1,
-    page: "/ultrasound",
+    page: "/scans/ultrasound",
     src: "https://helma.healthians.com/stationery/mailer-assets/61bc43a2774ff.png",
     atl: "",
     title: "Ultrasound",
@@ -25,7 +25,7 @@ const content = [
   },
   {
     id: 1,
-    page: "/digitalxray",
+    page: "/scans/digitalxray",
     src: "https://helma.healthians.com/stationery/mailer-assets/61bc45e8a7ad0.png",
     atl: "",
     title: "Digital X-Ray",
@@ -37,7 +37,7 @@ const content = [
   },
   {
     id: 1,
-    page: "/ecgtest",
+    page: "/scans/ecgtest",
     src: "https://helma.healthians.com/stationery/mailer-assets/61bc4a3f62b07.jpg",
     atl: "",
     title: "ECG Test",
