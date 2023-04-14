@@ -45,7 +45,7 @@ export const quality = [
   {
     title: "15+",
     content: "Quality indicator monitored on daily basis",
-    img: "/whyAarna/QualityIndicators.svg",
+    img: "/whyAarna/qualityIndicators.svg",
   },
 ];
 
