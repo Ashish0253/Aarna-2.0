@@ -15,8 +15,8 @@ const Breadcrumb = ({ links }) => {
               <Link
                 href={link.link}
                 className={`${
-                  index !== length - 1 ? "" : "text-primary"
-                }  hover:text-primary `}
+                  index !== length - 1 ? "" : "text-tertiary"
+                }  hover:text-tertiary `}
               >
                 {link.title}
               </Link>

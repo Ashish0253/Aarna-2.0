@@ -11,6 +11,7 @@ module.exports = {
         primary: "#423185",
         secondary: "#91C02C",
         tertiary: "#17b9c1",
+        quaternary: "#f27d27",
       },
       fontFamily: {
         body: "'Montserrat', sans-serif",

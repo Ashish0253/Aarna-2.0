@@ -26,7 +26,7 @@ function ScrollButton() {
   }, []);
 
   return (
-    <div className="fixed w-full  justify sm:left-[95%] left-[85%] sm:bottom-[8%] bottom-14 h-5 text-[3rem] z-[1] cursor-pointer text-secondary">
+    <div className="fixed w-full justify sm:left-[95%] left-[85%] sm:bottom-[8%] bottom-14 h-5 text-[3rem] z-[1] cursor-pointer text-tertiary">
       <FaArrowCircleUp
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}

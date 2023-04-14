@@ -12,7 +12,7 @@ import HealthPackages from "@/components/healthPackages";
 import Footer from "@/components/layout/footer";
 import WhyAarna from "@/components/whyAarna";
 import Call from "@/components/call";
-import SearchTestPackages from "@/components/searchTestPackages";
+import SearchTestAndPackages from "@/components/SearchTestAndPackages";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +30,7 @@ export default function Home({ setSidebar, ref3 }) {
       <Feature setSidebar={setSidebar} ref3={ref3} />
       <HealthScans />
       <HealthPackages />
-      <SearchTestPackages />
+      <SearchTestAndPackages />
       <Call />
       <WhyAarna />
       {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}

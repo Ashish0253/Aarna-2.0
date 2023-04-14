@@ -2,32 +2,32 @@ export const why = [
   {
     title: "3 Lakh",
     content: "Samples Collected",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/3Lakh Sample Collected.svg",
   },
   {
     title: "50+",
     content: "Collection Centres",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/collectionCentres.svg",
   },
   {
     title: "10 Lakh",
     content: "Total No. of Customers",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/totalNoOfCustomers.svg",
   },
   {
     title: "2 ",
     content: "Labs",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/Pick-up Points.svg",
   },
   {
     title: "5000+",
     content: "Total No. of Tests & Panels",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/testsAndPanels.svg",
   },
   {
     title: "300",
     content: "Tests per day",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/Labs.svg",
   },
 ];
 
@@ -35,17 +35,17 @@ export const quality = [
   {
     title: "600+",
     content: "Instruments used for real time QC monitoring",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/instruments.svg",
   },
   {
     title: "250+",
     content: "Quality Checks",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/qualityChecks.svg",
   },
   {
     title: "15+",
     content: "Quality indicator monitored on daily basis",
-    img: "/Ellipse 2.svg",
+    img: "/whyAarna/qualityIndicators.svg",
   },
 ];
 
