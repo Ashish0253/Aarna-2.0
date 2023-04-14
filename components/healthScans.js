@@ -106,15 +106,15 @@ function HealthScans() {
                   </span>{" "}
                   {item.price3}
                 </h3>
-                <div className= " hidden sm:block">
+                {/* <div className= " hidden sm:block">
                 <p className="text-sm px-4">{item.description}</p>
-                </div>
+                </div> */}
                 {/* <p className="p-5 scan-desc">{item.description}</p> */}
                 {/* </Link> */}
                 <Link href={item.page}>
                 <button
                   to={item.page}
-                  className=" mt-6 text-lg border-transparent rounded-lg px-8 py-0 border-2 bg-[#1ebaba] text-white "
+                  className=" mt-6 border-transparent rounded-xl px-10 py-2 border-2 bg-[#f27d27] text-white font-bold "
                 >
                   Book Now
                 </button>
