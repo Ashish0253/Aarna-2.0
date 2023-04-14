@@ -4,35 +4,13 @@ import React from "react";
 import { healthPackages } from "../constants/healthPackages";
 // import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Slider from "react-slick";
-
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { ButtonBase } from "@mui/material";
+import RenderArrows from "../utils/RenderArrows";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function HealthPackages() {
   const slider = React.useRef(null);
-
-  function RenderArrows() {
-    return (
-      <div className="slider-arrow-packages">
-        <ButtonBase
-          className="arrow-btn-prev-packages"
-          onClick={() => slider?.current?.slickPrev()}
-        >
-          <ArrowBackIosIcon fontSize="large" sx={{ color: "black" }} />
-        </ButtonBase>
-        <ButtonBase
-          className="arrow-btn-next-packages"
-          onClick={() => slider?.current?.slickNext()}
-        >
-          <ArrowForwardIosIcon fontSize="large" sx={{ color: "black" }} />
-        </ButtonBase>
-      </div>
-    );
-  }
 
   var settings = {
     dots: false,
@@ -80,14 +58,14 @@ export default function HealthPackages() {
         Health Packages
       </div>
       <div className="relative h-full">
-        <RenderArrows />
+        <RenderArrows slider={slider} />
 
-        <Slider ref={slider} {...settings} className="px-8 my-4">
+        <Slider ref={slider} {...settings} className="sm:px-8 px-4 my-4">
           {healthPackages.map((item) => {
             return (
               <div
                 key={item.title}
-                className=" mx-2 relative  text-white h-[330px] h-"
+                className=" mx-0 relative  text-white h-[330px] h-"
               >
                 <div className="border-2 p-5 rounded-2xl bg-tertiary pb-1 h-[300px]">
                   <div className="text-2xl font-bold p-2 h-20">

@@ -1,6 +1,6 @@
 export default function SearchTestPackages() {
   return (
-    <div className="bg-white border-2 border-transparent rounded-2xl sm:mx-[15%] mx-4 my-20 pb-5 px-12 shadow-xl">
+    <div className="bg-white border-2 border-transparent rounded-2xl sm:mx-[15%] mx-4 my-20 pb-5 px-10 shadow-xl">
       <div className="text-2xl font-bold text-black pt-8 pb-4">
         Search Test and Packages
       </div>

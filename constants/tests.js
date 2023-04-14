@@ -12,6 +12,7 @@ export const Tests = [
     specimen: "SERUM",
     price: "550",
     type: "test",
+    condition: "Diabetes",
   },
   {
     title: "Malaria Parasite MP",
@@ -26,6 +27,7 @@ export const Tests = [
     specimen: "SERUM",
     price: "650",
     type: "test",
+    condition: "Diabetes HIV",
   },
   {
     title: "KFT",
@@ -33,6 +35,7 @@ export const Tests = [
     specimen: "SERUM",
     price: "700",
     type: "test",
+    condition: "Diabetes HIV",
   },
   {
     title: "Lipid Profile",
@@ -40,6 +43,7 @@ export const Tests = [
     specimen: "SERUM",
     price: "550",
     type: "test",
+    condition: "Diabetes HIV",
   },
   {
     title: "Amylase",
@@ -61,6 +65,7 @@ export const Tests = [
     specimen: "SERUM",
     price: "450",
     type: "test",
+    condition: "Arthritis",
   },
   {
     title: "RA Factor",
@@ -68,6 +73,7 @@ export const Tests = [
     specimen: "SERUM",
     price: "450",
     type: "test",
+    condition: "Arthritis",
   },
   {
     title: "HIV",
@@ -201,6 +207,7 @@ export const Tests = [
     specimen: "SERUM",
     price: "150",
     type: "test",
+    condition: "Kidney",
   },
   {
     title: "LDH",
@@ -285,6 +292,7 @@ export const Tests = [
     specimen: "SERUM",
     price: "700",
     type: "test",
+    condition: "Allergy",
   },
   {
     title: "Total PSA ",

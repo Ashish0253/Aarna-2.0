@@ -3,6 +3,7 @@ import Image from "next/image";
 import { why, quality, offer } from "../constants/whyArna";
 
 import Slider from "react-slick";
+import RenderArrows from "../utils/RenderArrows";
 
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -13,25 +14,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function WhyAarna() {
   const slider = React.useRef(null);
-
-  function RenderArrows() {
-    return (
-      <div className="slider-arrow-packages">
-        <ButtonBase
-          className="arrow-btn-prev-packages"
-          onClick={() => slider?.current?.slickPrev()}
-        >
-          <ArrowBackIosIcon fontSize="large" sx={{ color: "black" }} />
-        </ButtonBase>
-        <ButtonBase
-          className="arrow-btn-next-packages"
-          onClick={() => slider?.current?.slickNext()}
-        >
-          <ArrowForwardIosIcon fontSize="large" sx={{ color: "black" }} />
-        </ButtonBase>
-      </div>
-    );
-  }
 
   var settings = {
     dots: false,
@@ -104,7 +86,7 @@ export default function WhyAarna() {
           Offer & Anouncement
         </div>
         <div className="relative  mt-10">
-          <RenderArrows />
+          <RenderArrows slider={slider} />
           <Slider ref={slider} {...settings} className="px-8 my-4">
             {offer.map((item) => {
               return (

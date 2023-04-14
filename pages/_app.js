@@ -1,11 +1,11 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import Navbar from "@/components/navbar";
-import Sidebar from "@/components/sidebar";
+import Footer from "@/components/layout/footer";
+import Header from "@/components/layout/header";
+import Navbar from "@/components/layout/navbar";
+import Sidebar from "@/components/layout/sidebar";
 import "@/styles/globals.css";
 import { useEffect, useMemo, useRef, useState } from "react";
 import useIntersection from "@/hooks/useIntersection";
-import ScrollButton from "@/components/ScrollButton";
+import ScrollButton from "@/components/layout/ScrollButton";
 
 export default function App({ Component, pageProps }) {
   const [sidebar, setSidebar] = useState(false);

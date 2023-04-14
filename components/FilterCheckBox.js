@@ -1,7 +1,7 @@
 import React from "react";
 
 const FilterCheckBox = ({ children, isClicked, handleChange, parent }) => {
-  console.log(children.toLowerCase());
+  // console.log(children.toLowerCase());
 
   return (
     <div className="p-1">

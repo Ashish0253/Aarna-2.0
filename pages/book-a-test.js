@@ -14,12 +14,17 @@ import Breadcrumb from "../components/Breadcrumb";
 import FilterCheckBox from "@/components/FilterCheckBox";
 import TestsAndPackages from "@/components/TestsAndPackages";
 
+import Modal from "@/components/Popup";
+
 export default function BookATest() {
   const [tests, setTests] = useState(Tests);
 
   const [first, setFirst] = useState(true);
   const [second, setSecond] = useState(true);
   const [third, setThird] = useState(true);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedTest, setSelectedTest] = useState("");
 
   function isClicked() {
     var elms = document.querySelectorAll("input");
@@ -37,12 +42,12 @@ export default function BookATest() {
   const [sortListBy, setSortListBy] = useState("test");
   const [organ, setOrgan] = useState("");
   const [condition, setConsition] = useState("");
-  console.log(sortListBy);
+  // console.log(sortListBy);
 
   function handleChangeInSortBy(event) {
     // setSortListBy(event.target.checked);
-    console.log(event.target.parent);
-    console.log(event.target.alt);
+    // console.log(event.target.parent);
+    // console.log(event.target.alt);
 
     const name = event.target.name.toLowerCase();
 
@@ -61,8 +66,8 @@ export default function BookATest() {
 
   function handleChangeOrgan(event) {
     // setSortListBy(event.target.checked);
-    console.log(event.target.name);
-    console.log(sortListBy);
+    // console.log(event.target.name);
+    // console.log(sortListBy);
 
     const name = event.target.name.toLowerCase();
 
@@ -81,8 +86,8 @@ export default function BookATest() {
 
   function handleChangeInCondition(event) {
     // setSortListBy(event.target.checked);
-    console.log(event.target.name);
-    console.log(sortListBy);
+    // console.log(event.target.name);
+    // console.log(sortListBy);
 
     const name = event.target.name.toLowerCase();
 
@@ -114,6 +119,7 @@ export default function BookATest() {
 
   return (
     <div>
+      <div id="portal"></div>
       <Carousel />
       <Breadcrumb links={breadcrumbData} />
       <SearchBar data={Tests} setData={setTests} />
@@ -287,8 +293,14 @@ export default function BookATest() {
 
         {/* Tests Section  */}
         <div className=" col-span-3">
-          <TestsAndPackages data={tests} />
+          <TestsAndPackages
+            data={tests}
+            setIsOpen={setIsOpen}
+            setSelectedTest={setSelectedTest}
+          />
         </div>
+
+        {isOpen && <Modal setIsOpen={setIsOpen} selectedTest={selectedTest} />}
       </div>
     </div>
   );
