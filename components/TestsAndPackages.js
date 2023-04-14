@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import { MdDownloadForOffline } from "react-icons/md";
+// import Link from "next/link";
+// import { HiOutlineShoppingBag } from "react-icons/hi";
+// import { MdDownloadForOffline } from "react-icons/md";
 import { BsCurrencyRupee } from "react-icons/bs";
 
 const TestsAndPackages = ({ data, setIsOpen, setSelectedTest }) => {
@@ -16,8 +16,8 @@ const TestsAndPackages = ({ data, setIsOpen, setSelectedTest }) => {
 
   const handleBook = (event) => {
     setIsOpen(true);
-    console.log(event.target.name);
-    setSelectedTest();
+    console.log(event.target.value);
+    setSelectedTest(event.target.value);
   };
 
   const renderTestAndPackages = () => {
@@ -52,6 +52,7 @@ const TestsAndPackages = ({ data, setIsOpen, setSelectedTest }) => {
         <div className="text-sm flex justify-end border-t-2 pt-4 mt-4 border-dashed border-gray-200">
           <button
             onClick={(event) => handleBook(event)}
+            value={item.title}
             className=" text-white border-2 border-transparent shadow-lg rounded-xl px-3 py-2 m-1 bg-primary"
           >
             Book Now

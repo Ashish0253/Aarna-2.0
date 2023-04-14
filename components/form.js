@@ -3,8 +3,10 @@ import { Formik, Field, ErrorMessage, Form } from "formik";
 import * as Yup from "yup";
 
 const BookTestForm = ({ selectedTest }) => {
+  const borderStyles = "border-2 rounded-lg border-gray-500 px-2 py-2";
   return (
     <Formik
+      className
       initialValues={{ firstName: "", lastName: "", email: "" }}
       validationSchema={Yup.object({
         selectedTest: Yup.string(),
@@ -14,6 +16,7 @@ const BookTestForm = ({ selectedTest }) => {
         lastName: Yup.string()
           .max(20, "Must be 20 characters or less")
           .required("Required"),
+        mobile: Yup.string().max(10, "Must be 10 numbers").required("Required"),
         email: Yup.string().email("Invalid email address").required("Required"),
       })}
       onSubmit={(values, { setSubmitting }) => {
@@ -30,13 +33,12 @@ const BookTestForm = ({ selectedTest }) => {
             Selected Test
           </label>{" "}
           <br />
-          <div className="border-2 rounded-lg border-gray-500 px-2 py-2">
+          <div className={`${borderStyles}`}>
             <Field
               name="selectedTest"
-              // value="CBC"
+              value={selectedTest}
               type="text"
-              classN
-              ame="outline-none w-full"
+              className="outline-none w-full"
             />
           </div>
           <ErrorMessage name="selectedTest" />
@@ -44,7 +46,7 @@ const BookTestForm = ({ selectedTest }) => {
         <div className="flex gap-x-4">
           <div>
             {/* <label htmlFor="firstName">First Name</label> */}
-            <div className="border-2 border-gray-500 px-2 py-2">
+            <div className={`${borderStyles}`}>
               <Field
                 name="firstName"
                 placeholder="First Name"
@@ -57,7 +59,7 @@ const BookTestForm = ({ selectedTest }) => {
 
           <div>
             {/* <label htmlFor="lastName">last Name</label> */}
-            <div className="border-2 border-gray-500 px-2 py-2">
+            <div className={`${borderStyles}`}>
               <Field
                 name="lastName"
                 placeholder="Last Name"
@@ -72,7 +74,7 @@ const BookTestForm = ({ selectedTest }) => {
         <div className="flex gap-x-4">
           <div>
             {/* <label htmlFor="firstName">First Name</label> */}
-            <div className="border-2 border-gray-500 px-2 py-2">
+            <div className={`${borderStyles}`}>
               <Field
                 name="mobile"
                 placeholder="Mobile"
@@ -85,7 +87,7 @@ const BookTestForm = ({ selectedTest }) => {
 
           <div>
             {/* <label htmlFor="lastName">last Name</label> */}
-            <div className="border-2 border-gray-500 px-2 py-2">
+            <div className={`${borderStyles}`}>
               <Field
                 name="gender"
                 placeholder="Gender"
@@ -99,20 +101,20 @@ const BookTestForm = ({ selectedTest }) => {
 
         <div>
           {/* <label htmlFor="email">Email Address</label> */}
-          <div className="border-2 border-gray-500 px-2 py-2">
+          <div className={`${borderStyles}`}>
             <Field
-              name="collection"
-              placeholder="Collection"
-              type="collection"
+              name="collectionType"
+              placeholder="Collection Type"
+              type="text"
               className="outline-none w-full"
             />
           </div>
-          <ErrorMessage name="collection" className="text-red-600" />
+          <ErrorMessage name="collectionType" className="text-red-600" />
         </div>
 
         <div>
           {/* <label htmlFor="email">Email Address</label> */}
-          <div className="border-2 border-gray-500 px-2 py-2">
+          <div className={`${borderStyles}`}>
             <Field
               name="email"
               placeholder="Email"
@@ -126,7 +128,7 @@ const BookTestForm = ({ selectedTest }) => {
         <div className="flex justify-between">
           <div>
             {/* <label htmlFor="firstName">First Name</label> */}
-            <div className="border-2 border-gray-500 px-2 py-2">
+            <div className={`${borderStyles}`}>
               <Field
                 name="date"
                 // placeholder="date"
@@ -139,7 +141,7 @@ const BookTestForm = ({ selectedTest }) => {
 
           <div>
             {/* <label htmlFor="lastName">last Name</label> */}
-            <div className="border-2 border-gray-500 px-2 py-2">
+            <div className={`${borderStyles}`}>
               <Field
                 name="time"
                 // placeholder="Gender"

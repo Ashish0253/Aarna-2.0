@@ -300,7 +300,7 @@ export default function BookATest() {
           />
         </div>
 
-        {isOpen && <Modal />}
+        {isOpen && <Modal setIsOpen={setIsOpen} selectedTest={selectedTest} />}
       </div>
     </div>
   );
