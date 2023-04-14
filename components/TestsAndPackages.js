@@ -5,13 +5,19 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { MdDownloadForOffline } from "react-icons/md";
 import { BsCurrencyRupee } from "react-icons/bs";
 
-const TestsAndPackages = ({ data }) => {
+const TestsAndPackages = ({ data, setIsOpen, setSelectedTest }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12;
   const totalPages = Math.ceil(data.length / productsPerPage);
 
   const handleClick = (pageNumber) => {
     setCurrentPage(pageNumber);
+  };
+
+  const handleBook = (event) => {
+    setIsOpen(true);
+    console.log(event.target.name);
+    setSelectedTest();
   };
 
   const renderTestAndPackages = () => {
@@ -44,7 +50,10 @@ const TestsAndPackages = ({ data }) => {
         </div>
 
         <div className="text-sm flex justify-end border-t-2 pt-4 mt-4 border-dashed border-gray-200">
-          <button className=" text-white border-2 border-transparent shadow-lg rounded-xl px-3 py-2 m-1 bg-primary">
+          <button
+            onClick={(event) => handleBook(event)}
+            className=" text-white border-2 border-transparent shadow-lg rounded-xl px-3 py-2 m-1 bg-primary"
+          >
             Book Now
           </button>{" "}
         </div>

@@ -1,3 +1,4 @@
+import CoreValues from "@/components/CoreValues";
 import Breadcrumb from "../components/Breadcrumb";
 import Image from "next/image";
 // import { ourVision } from "../public";
@@ -54,7 +55,7 @@ export default function AboutUs() {
         </div>
       </section>
       <section>
-        <div>Our Values</div>
+        <CoreValues />
       </section>
       <section>
         <div className="border-2 border-transparent rounded-2xl  mx-[15%] my-20 pb-10">

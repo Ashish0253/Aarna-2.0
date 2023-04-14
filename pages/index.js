@@ -3,13 +3,13 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
-import Header from "@/components/header";
-import Navbar from "@/components/navbar";
+import Header from "@/components/layout/header";
+import Navbar from "@/components/layout/navbar";
 import Carousel from "@/components/carousel";
 import Feature from "@/components/feature";
 import HealthScans from "@/components/healthScans";
 import HealthPackages from "@/components/healthPackages";
-import Footer from "@/components/footer";
+import Footer from "@/components/layout/footer";
 import WhyAarna from "@/components/whyAarna";
 import Call from "@/components/call";
 import SearchTestPackages from "@/components/searchTestPackages";
