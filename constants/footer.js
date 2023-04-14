@@ -22,14 +22,14 @@ export const footerLinks = [
         name: "Promotions & Discounts",
         link: "/",
       },
-      {
-        name: "Our Labs",
-        link: "/",
-      },
-      {
-        name: "Quality",
-        link: "/",
-      },
+      // {
+      //   name: "Our Labs",
+      //   link: "/",
+      // },
+      // {
+      //   name: "Quality",
+      //   link: "/",
+      // },
       {
         name: "Our Departments",
         link: "/",
@@ -47,14 +47,14 @@ export const footerLinks = [
         name: "Vision, Mission & Values",
         link: "/",
       },
-      {
-        name: "Our Team",
-        link: "/",
-      },
-      {
-        name: "Our Network",
-        link: "/",
-      },
+      // {
+      //   name: "Our Team",
+      //   link: "/",
+      // },
+      // {
+      //   name: "Our Network",
+      //   link: "/",
+      // },
       {
         name: "Logistics Strength",
         link: "/",

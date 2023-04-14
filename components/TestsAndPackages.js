@@ -30,7 +30,7 @@ const TestsAndPackages = ({ data, setIsOpen, setSelectedTest }) => {
         key={item.title}
         className="border-2 border-transparent rounded-xl p-4 sm:m-0 m-4  text-sm shadow-lg bg-white"
       >
-        <div className="text-lg font-semibold text-primary flex">
+        <div className="text-lg font-semibold text-tertiary flex">
           <Image
             src="/microscope 1.svg"
             alt="microscope"
@@ -53,7 +53,7 @@ const TestsAndPackages = ({ data, setIsOpen, setSelectedTest }) => {
           <button
             onClick={(event) => handleBook(event)}
             value={item.title}
-            className=" text-white border-2 border-transparent shadow-lg rounded-xl px-3 py-2 m-1 bg-primary"
+            className=" text-white font-bold border-2 border-transparent shadow-lg rounded-xl px-3 py-2 m-1 bg-quaternary"
           >
             Book Now
           </button>{" "}

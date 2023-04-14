@@ -25,24 +25,25 @@ export default function AboutUs() {
         </div>
         <div className="p-4">
           <div className="font-bold text-primary text-xl p-2">Our Mission</div>
-          <div className="p-2 text-base">
-            Lorem Ipsum is simply dummy text of the <br /> printing and
-            typesetting industry. Lorem <br /> Ipsum has been the
-            industry&apos;s standard <br /> dummy text ever since the 1500s,
-            when an <br /> unknown printer took a galley of type and <br />{" "}
-            scrambled it to make a type specimen book.
-          </div>
+          <p className="p-2 text-base max-w-[60%]">
+            At Aarna Diagnostic Centre, our mission is to provide accurate,
+            timely diagnostics and exceptional patient care, utilizing
+            cutting-edge technology and a highly trained team. We strive to
+            promote preventive healthcare through community outreach,
+            collaborate with healthcare providers, and maintain ethical
+            practices, fostering a healthier society and sustainable approach to
+            healthcare.
+          </p>
         </div>
       </section>
       <section className="p-10 pt-0 grid grid-cols-2">
         <div className="p-4 grid justify-items-end">
           <div className="font-bold text-primary text-xl p-2">Our Vision</div>
-          <div className="p-2 flex text-right text-base">
-            Lorem Ipsum is simply dummy text of the <br /> printing and
-            typesetting industry. Lorem <br /> Ipsum has been the
-            industry&apos;s standard <br /> dummy text ever since the 1500s,
-            when an <br /> unknown printer took a galley of type and <br />{" "}
-            scrambled it to make a type specimen book.
+          <div className="p-2 flex text-right text-base max-w-[60%]">
+            To become the most trusted and accessible diagnostic service
+            provider, promoting health and well-being through exceptional
+            patient care, cutting-edge technology, and continuous innovation in
+            the field of diagnostics.
           </div>
         </div>
         <div className="flex justify-start pl-4">
@@ -54,10 +55,12 @@ export default function AboutUs() {
           />
         </div>
       </section>
-      <section>
+      <section className="mb-[200px]">
         <CoreValues />
       </section>
-      <section>
+
+      {/* managemnet ki photos */}
+      {/* <section>
         <div className="border-2 border-transparent rounded-2xl  mx-[15%] my-20 pb-10">
           <div className="text-2xl font-bold text-primary pt-8 pb-4 ">
             Ethos
@@ -75,7 +78,7 @@ export default function AboutUs() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

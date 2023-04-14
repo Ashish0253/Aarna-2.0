@@ -7,7 +7,7 @@ export default function Sidebar({ sidebar }) {
       {sidebar && (
         <div className="sm:block hidden my-10 grid-rows-4 justify-end fixed right-2 bg-white h-[360px] border-2 border-transparent rounded-lg shadow-lg z-10 text-xs text-primary font-bold">
           <div className="">
-            <div className="border-b-2 border-gray-200 grid justify-items-center p-2">
+            <div className="border-b-2 border-gray-300 grid justify-items-center p-2">
               <Link
                 href="/nearest-centre"
                 className="grid justify-items-center"
@@ -24,7 +24,7 @@ export default function Sidebar({ sidebar }) {
                 <div>Centre</div>
               </Link>
             </div>
-            <div className="border-b-2 border-gray-200 p-2">
+            <div className="border-b-2 border-gray-300 p-2">
               <Link href="/book-a-test" className="grid justify-items-center">
                 <div>
                   <Image
@@ -39,7 +39,7 @@ export default function Sidebar({ sidebar }) {
               </Link>
             </div>
 
-            <div className="border-b-2 border-gray-200 grid justify-items-center p-2">
+            <div className="border-b-2 border-gray-300 grid justify-items-center p-2">
               <Link href="/" className="grid justify-items-center">
                 <div>
                   <Image
