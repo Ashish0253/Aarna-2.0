@@ -17,7 +17,7 @@ export default function AboutUs() {
       <section className="p-10 grid grid-cols-2">
         <div className="flex justify-end pr-4">
           <Image
-            src="/Rectangle 20.svg"
+            src="/aboutUs/Our Mission.svg"
             alt="rectangle"
             width={300}
             height={20}
@@ -48,7 +48,7 @@ export default function AboutUs() {
         </div>
         <div className="flex justify-start pl-4">
           <Image
-            src="/Rectangle 20.svg"
+            src="/aboutUs/Our Vision.svg"
             alt="our vision"
             width={300}
             height={20}

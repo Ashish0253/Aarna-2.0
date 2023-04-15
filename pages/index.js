@@ -17,6 +17,21 @@ import SearchTestAndPackages from "@/components/SearchTestAndPackages";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ setSidebar, ref3 }) {
+  const banners = [
+    {
+      title: "health panel",
+      img: "/banners/BANNERS1.jpg",
+    },
+    {
+      title: "health screening",
+      img: "/banners/BANNERS2.jpg",
+    },
+    {
+      title: "complete health panel",
+      img: "/banners/BANNERS3.jpg",
+    },
+  ];
+
   return (
     <div className="">
       <Head>
@@ -26,7 +41,7 @@ export default function Home({ setSidebar, ref3 }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Carousel />
+      <Carousel data={banners} />
       <Feature setSidebar={setSidebar} ref3={ref3} />
       <HealthScans />
       <HealthPackages />
