@@ -26,6 +26,13 @@ export default function BookATest() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedTest, setSelectedTest] = useState("");
 
+  const banner = [
+    {
+      title: "Book a Test",
+      img: "/banners/TEST BANNER.jpg",
+    },
+  ];
+
   function isClicked() {
     var elms = document.querySelectorAll("input");
     // console.log(elms);
@@ -120,7 +127,7 @@ export default function BookATest() {
   return (
     <div>
       <div id="portal"></div>
-      <Carousel />
+      <Carousel data={banner} />
       <Breadcrumb links={breadcrumbData} />
       <SearchBar data={Tests} setData={setTests} />
       <div className="sm:grid grid-cols-4 sm:mx-[15%] my-8 gap-8 bg-[#f2f2f2]">
