@@ -55,11 +55,7 @@ export default function Carousel({ data }) {
       <div className="relative h-full">
         {data.length > 1 && <RenderArrows slider={slider} />}
 
-        <Slider
-          ref={slider}
-          {...settings}
-          className="sm:px-0  overflow-hidden m"
-        >
+        <Slider ref={slider} {...settings} className="sm:px-0 -mx-2 m">
           {data.map((item) => {
             return (
               <div key={data.title}>
