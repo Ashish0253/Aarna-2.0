@@ -9,7 +9,7 @@ export default function Header() {
         </Link>
         <Link href="/departments">DEPARTMENTS</Link>
         <Link href="/about-us">ABOUT US</Link>
-        <Link href="/">CONTACT US</Link>
+        <Link href="/contact-us">CONTACT US</Link>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export default function ultrasound() {
   return (
     <div>
       <Breadcrumb links={BreadCrumbData} />
-      <div className="bg-white my-20 sm:mx-20 lg:mx-24 xl:mx-44 rounded-xl p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ">
+      <div className="bg-white mt-20 pb-16 sm:mx-20 lg:mx-24 xl:mx-52 rounded-xl p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ">
         <div className="sm:col-span-2">
           <h1 className="text-black text-2xl font-bold pb-4">Ultrasound</h1>
           <p className="text-sm">
@@ -48,7 +48,7 @@ export default function ultrasound() {
         </div>
       </div>
 
-      <div className="sm:mx-20 lg:mx-24 xl:mx-44 bg-white rounded-xl overflow-hidden mb-20 shadow-lg">
+      <div className="sm:mx-20 lg:mx-24 xl:mx-52 pb-16 bg-white rounded-xl overflow-hidden mb-20 shadow-lg">
         <div class="relative overflow-x-auto sm:rounded-lg">
           <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase dark:text-black">
