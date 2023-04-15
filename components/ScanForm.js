@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Image from "next/image";
+import popup from "../public/popUpimg.jpg";
 
 export default function ScanForm(props) {
   const [name, setName] = useState("");
@@ -21,7 +23,13 @@ export default function ScanForm(props) {
         data
       )
       .then((response) => {
-        alert("Form Submitted Successfully!!");
+        var element = document.getElementById("popup");
+        element.classList.add("block");
+        element.classList.remove("hidden");
+        setTimeout(() => {
+          element.classList.remove("block");
+          element.classList.add("hidden");
+        }, 3000);
         setName("");
         setNumber("");
       });
@@ -76,6 +84,9 @@ export default function ScanForm(props) {
           </button>
         </div>
       </form>
+      <div id="popup" className="z-9 fixed bottom-1/3 right-1/3 hidden">
+        <Image src={popup} height={400} width={400} alt=""></Image>
+      </div>
     </div>
   );
 }

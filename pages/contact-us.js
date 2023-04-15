@@ -4,6 +4,7 @@ import Clock from "../public/clock.svg";
 import Image from "next/image";
 import { useState } from "react";
 import axios from "axios";
+import popup from "../public/popUpimg.jpg";
 
 export default function ContactUs() {
   const BreadData = [
@@ -26,9 +27,9 @@ export default function ContactUs() {
     e.preventDefault();
     const data = {
       Form_Type: "Contact Us Form",
-      Patient_Name: fname+" "+lname,
+      Patient_Name: fname + " " + lname,
       Mobile: phone,
-      Address: address
+      Address: address,
     };
 
     axios
@@ -37,7 +38,17 @@ export default function ContactUs() {
         data
       )
       .then((response) => {
-        alert("Form Submitted Successfully!!");
+        var element = document.getElementById("popup");
+        element.classList.add("block");
+        element.classList.remove("hidden");
+        setTimeout(() => {
+          element.classList.remove("block");
+          element.classList.add("hidden");
+        }, 3000);
+        setFname("");
+        setLname("");
+        setAddress("");
+        setNumber("");
         setFname("");
         setLname("");
         setAddress("");
@@ -46,7 +57,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div>
+    <div className="">
       <Breadcrumb links={BreadData} />
       <div className=" xl:mx-56 md:mx-44 sm:mx-32 mx-4  bg-white rounded-xl mb-20 shadow-xl">
         <div className="px-12 pt-8 pb-8">
@@ -137,24 +148,25 @@ export default function ContactUs() {
                     </p>
                   </div>
                   <div className="">
-                  <a href="tel:7503909232">
-                    <button className=" bg-orange-500 text-black text-xsm sm:text-sm font-semibold w-full p-2 rounded-xl flex justify-center items-center gap-2">
-                      <svg
-                        stroke="currentColor"
-                        fill="none"
-                        stroke-width="2"
-                        viewBox="0 0 24 24"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="m-1 text-black"
-                        height="1em"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                      </svg>
-                      Book Test Now
-                    </button></a>
+                    <a href="tel:7503909232">
+                      <button className=" bg-orange-500 text-black text-xsm sm:text-sm font-semibold w-full p-2 rounded-xl flex justify-center items-center gap-2">
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="m-1 text-black"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        Book Test Now
+                      </button>
+                    </a>
                   </div>
                 </div>
 
@@ -285,6 +297,9 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+      </div>
+      <div id="popup" className="z-9 fixed bottom-1/3 right-1/3 hidden">
+        <Image src={popup} height={400} width={400} alt=""></Image>
       </div>
     </div>
   );
