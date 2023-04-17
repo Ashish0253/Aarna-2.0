@@ -18,29 +18,32 @@ export default function digitalxray() {
     <div>
       <Breadcrumb links={BreadCrumbData} />
       <div className="bg-white mt-20 pb-16 sm:mx-20 lg:mx-24 xl:mx-52 rounded-xl p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ">
-        <div className="sm:col-span-2">
+        <div id="scan-back-page" className="sm:col-span-2">
           <h1 className="text-black text-2xl font-bold pb-4">Digital X-Ray</h1>
           <p className="text-sm">
-            Computed tomography or CT/CAT scan is a commonly ordered image
-            diagnostic test that combines X-ray images from several angles and
-            compiles them into a single image using 2D and 3D image
-            reconstruction. The cross-sectional images or ‘slices’ can be taken
-            for any part or structure of the body, including the bones, soft
-            tissues, and blood vessels. Unlike an X-ray that provides only one
-            image, a CT scan provides multiple images for enhanced diagnostic
-            accuracy and clarity. CT scan can be performed for a variety of
-            conditions, including internal injuries, trauma, tumours, fractures,
-            etc. This imaging test is also conducted as a guide for surgeries,
-            radiation therapy, and biopsy, as well as to monitor the
-            effectiveness of ongoing treatments. CT scan is a non-invasive and
-            painless procedure that is generally conducted without the need for
-            a contrast dye. However, for certain medical conditions, a
-            Contrast-CT scan is conducted, wherein the contrast material is
-            administered either orally or intravenously (IV). The contrast
-            material is especially useful when testing soft tissue, as it blocks
-            the X-rays, which makes the target area appear white on the scan. It
-            has little to no side effects and gets flushed out via urine in 24
-            hours.
+            Digital X-ray, also known as computed radiography, is a medical
+            imaging technique that uses X-rays to produce detailed images of the
+            {"body's"} internal structures. This non-invasive and painless test
+            can help diagnose and monitor a variety of medical conditions,
+            including bone fractures, lung disease, and dental problems. Digital
+            X-ray is widely used in hospitals and medical centers worldwide, and
+            has become an essential tool in modern diagnostic medicine. During a
+            digital X-ray test, the patient is positioned in front of a special
+            plate that captures the X-ray images. The images are then processed
+            by a computer, which produces detailed, high-quality images of the
+            internal structures. Digital X-ray is a quick and painless test, and
+            can be performed in a variety of settings, including a {"doctor's"}
+            office or hospital.
+          </p>
+          <br />
+          <p className="text-sm">
+            Digital X-ray is particularly useful for detecting and diagnosing
+            bone fractures, as well as identifying abnormalities in the lungs,
+            such as pneumonia or lung cancer. It can also be used to identify
+            dental problems, such as cavities or impacted teeth. Digital X-ray
+            is a safe and effective tool for diagnosing and monitoring a wide
+            range of medical conditions, and has helped improve patient outcomes
+            and quality of care.
           </p>
         </div>
         <div className="mt-10 sm:col-span-2 lg:col-span-1">

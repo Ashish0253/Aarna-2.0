@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Field, ErrorMessage, Form } from "formik";
 import * as Yup from "yup";
+import axios from "axios";
 
 const BookTestForm = ({ selectedTest }) => {
   const borderStyles = "border-2 rounded-lg border-gray-500 px-2 py-2";
@@ -21,8 +22,21 @@ const BookTestForm = ({ selectedTest }) => {
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          console.log(values);
+          const data = {
+            Form_Type: "Test Form",
+            Patient_Name: values.firstName + " " + values.lastName,
+            Mobile: values.mobile,
+            Gender: values.gender,
+            Collection: values.collectionType,
+            Email: values.email,
+            Date: values.date,
+            Time: values.time,
+          };
+
+          axios.post(
+            "https://sheet.best/api/sheets/f935b9d9-4400-489a-8b5f-5eed992f2e2c",
+            data
+          );
           setSubmitting(false);
         }, 400);
       }}

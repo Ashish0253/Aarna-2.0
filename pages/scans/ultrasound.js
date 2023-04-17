@@ -18,29 +18,28 @@ export default function ultrasound() {
     <div>
       <Breadcrumb links={BreadCrumbData} />
       <div className="bg-white mt-20 pb-16 sm:mx-20 lg:mx-24 xl:mx-52 rounded-xl p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-12 ">
-        <div className="sm:col-span-2">
+        <div id="scan-back-page" className="sm:col-span-2">
           <h1 className="text-black text-2xl font-bold pb-4">Ultrasound</h1>
           <p className="text-sm">
-            Computed tomography or CT/CAT scan is a commonly ordered image
-            diagnostic test that combines X-ray images from several angles and
-            compiles them into a single image using 2D and 3D image
-            reconstruction. The cross-sectional images or ‘slices’ can be taken
-            for any part or structure of the body, including the bones, soft
-            tissues, and blood vessels. Unlike an X-ray that provides only one
-            image, a CT scan provides multiple images for enhanced diagnostic
-            accuracy and clarity. CT scan can be performed for a variety of
-            conditions, including internal injuries, trauma, tumours, fractures,
-            etc. This imaging test is also conducted as a guide for surgeries,
-            radiation therapy, and biopsy, as well as to monitor the
-            effectiveness of ongoing treatments. CT scan is a non-invasive and
-            painless procedure that is generally conducted without the need for
-            a contrast dye. However, for certain medical conditions, a
-            Contrast-CT scan is conducted, wherein the contrast material is
-            administered either orally or intravenously (IV). The contrast
-            material is especially useful when testing soft tissue, as it blocks
-            the X-rays, which makes the target area appear white on the scan. It
-            has little to no side effects and gets flushed out via urine in 24
-            hours.
+            Ultrasound, also known as sonography, is a medical imaging technique
+            that uses high-frequency sound waves to create images of the
+            {"body's"}
+            internal structures. This non-invasive and painless test can help
+            diagnose a variety of medical conditions, including pregnancy
+            complications, gallbladder disease, and musculoskeletal injuries.
+            Ultrasound is widely used in hospitals and medical centers
+            worldwide, and has become an essential tool in modern diagnostic
+            medicine.
+          </p>
+          <br />
+          <p className="text-sm">
+            During an ultrasound test, a technician applies a special gel to the
+            area of the body being examined, and then uses a wand-like device
+            called a transducer to send sound waves through the body. The sound
+            waves bounce back off the internal structures, and are then
+            converted into images by a computer. Ultrasound is safe and
+            non-invasive, and can be performed quickly and easily in a variety
+            of settings.
           </p>
         </div>
         <div className="mt-10 sm:col-span-2 lg:col-span-1">

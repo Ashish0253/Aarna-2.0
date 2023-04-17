@@ -24,10 +24,13 @@ export default function ScanForm(props) {
         data
       )
       .then((response) => {
+        var element2 = document.getElementById("scan-back-page");
+        element2.classList.add("blur-sm");
         var element = document.getElementById("popup");
         element.classList.add("block");
         element.classList.remove("hidden");
         setTimeout(() => {
+          element2.classList.remove("blur-sm");
           element.classList.remove("block");
           element.classList.add("hidden");
         }, 3000);
