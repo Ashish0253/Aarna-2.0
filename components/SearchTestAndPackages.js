@@ -10,6 +10,7 @@ import RenderArrows from "@/utils/RenderArrows";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SearchTestAndPackages() {
   const slider = useRef(null);
@@ -134,7 +135,9 @@ export default function SearchTestAndPackages() {
         </div>
 
         <div className="text-gray-500 flex justify-end underline text-sm p-1 font-semibold">
-          <button> View All</button>{" "}
+          <button>
+            <Link href="/search-test-packages">View All</Link>{" "}
+          </button>{" "}
         </div>
       </div>
     </>

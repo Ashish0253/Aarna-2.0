@@ -3,7 +3,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 export default function Call() {
   return (
-    <div className="bg-white border-2 border-transparent rounded-2xl flex-col grid sm:grid-cols-5 sm:mx-[15%] mx-4 my-20  shadow-lg">
+    <div className="bg-white border-2 border-transparent rounded-2xl flex-col grid sm:grid-cols-5 sm:mx-[15%] mx-4 my-10  shadow-lg">
       <div className="flex font-bold text-primary text-3xl sm:col-span-2 col-span-3 justify-between ">
         <Image src="/CALL.svg" alt="" width={150} height={10} />
         <div className="py-7 px-4 text-tertiary sm:text-3xl text-xl">

@@ -51,7 +51,7 @@ export const conditions = [
   },
   {
     name: "Disease of Pancreas",
-    icon: "/searchTestAndPackages/Disease Of Pancreas.svg",
+    icon: "/searchTestAndPackages/Disease of Pancreas.svg",
     link: "/",
   },
   {
@@ -200,8 +200,8 @@ export const conditions = [
     link: "/",
   },
   {
-    name: "Osteroporosis",
-    icon: "/searchTestAndPackages/Osteroporosis.svg",
+    name: "Osteoporosis",
+    icon: "/searchTestAndPackages/Osteoporosis.svg",
     link: "/",
   },
   {

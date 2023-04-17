@@ -20,6 +20,14 @@ const TestsAndPackages = ({ data, setIsOpen, setSelectedTest }) => {
     setSelectedTest(event.target.value);
   };
 
+  const handlePrev = () => {
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
+  };
+
+  const handleNext = () => {
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+  };
+
   const renderTestAndPackages = () => {
     const indexOfLastProduct = currentPage * productsPerPage;
     const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
@@ -86,12 +94,14 @@ const TestsAndPackages = ({ data, setIsOpen, setSelectedTest }) => {
       <div className="sm:grid grid-cols-2 gap-8 my-0 bg-[#f2f2f2]">
         {renderTestAndPackages()}
       </div>
-      <div>
-        <button>Prev</button>
-        <div className="flex">
+      <div className="flex justify-center pt-10 gap-4">
+        <button onClick={() => handlePrev()} className="">
+          Prev
+        </button>
+        {/* <div className="flex">
           <button>{renderPageNumbers()}</button>
-        </div>
-        <button>Next</button>
+        </div> */}
+        <button onClick={() => handleNext()}>Next</button>
       </div>
     </div>
   );

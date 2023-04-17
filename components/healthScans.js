@@ -76,7 +76,7 @@ function HealthScans() {
   };
 
   return (
-    <div className=" sm:px-20 px-4 pt-20">
+    <div className=" sm:px-20 px-4 pt-10">
       <div className="relative py-8 sm:mx-[11%] bg-white rounded-xl shadow-md">
         <h1 className=" text-start pl-12 pb-2 text-2xl font-bold text-black">
           Health Scans

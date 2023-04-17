@@ -1,11 +1,9 @@
 import Carousel from "@/components/carousel";
 import { Tests } from "@/constants/tests";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BsCurrencyRupee } from "react-icons/bs";
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import { MdDownloadForOffline } from "react-icons/md";
+
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { ImSearch } from "react-icons/im";
 
@@ -80,7 +78,8 @@ export default function BookATest() {
 
     if (event.target.checked) {
       const newItem = tests.filter((test) => {
-        return test.organ === name;
+        // return test.organ === name;
+        return test.organ.toLowerCase().includes(name);
       });
 
       console.log(newItem);
@@ -101,7 +100,7 @@ export default function BookATest() {
     if (event.target.checked) {
       setSortListBy(name);
       const newItem = tests.filter((test) => {
-        return test.organ === name;
+        return test.condition.toLowerCase().includes(name);
       });
 
       console.log(newItem);

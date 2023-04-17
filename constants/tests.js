@@ -5,6 +5,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "300",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "HBA1C",
@@ -13,6 +15,7 @@ export const Tests = [
     price: "550",
     type: "test",
     condition: "Diabetes",
+    organ: "Adrenal Gland",
   },
   {
     title: "Malaria Parasite MP",
@@ -20,6 +23,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "250",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "LFT",
@@ -28,6 +33,7 @@ export const Tests = [
     price: "650",
     type: "test",
     condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "KFT",
@@ -36,6 +42,7 @@ export const Tests = [
     price: "700",
     type: "test",
     condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Lipid Profile",
@@ -44,6 +51,7 @@ export const Tests = [
     price: "550",
     type: "test",
     condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Amylase",
@@ -51,6 +59,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "500",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Lipase",
@@ -58,6 +68,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "500",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "CRP",
@@ -66,6 +78,7 @@ export const Tests = [
     price: "450",
     type: "test",
     condition: "Arthritis",
+    organ: "Adrenal Gland",
   },
   {
     title: "RA Factor",
@@ -74,6 +87,7 @@ export const Tests = [
     price: "450",
     type: "test",
     condition: "Arthritis",
+    organ: "Adrenal Gland",
   },
   {
     title: "HIV",
@@ -81,6 +95,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "500",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "HCV",
@@ -88,6 +104,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "800",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "HbSAg",
@@ -95,6 +113,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "350",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "VDRL",
@@ -102,6 +122,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "200",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Typhidot Test",
@@ -109,6 +131,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "450",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Dengue",
@@ -116,6 +140,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "1200",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Sugar Test",
@@ -123,6 +149,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "60",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Urine Examination",
@@ -130,6 +158,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "150",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Blood Group",
@@ -137,6 +167,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "150",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "PT/INR",
@@ -144,6 +176,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "450",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "APTT",
@@ -151,6 +185,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "300",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "ESR",
@@ -158,6 +194,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "100",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Peripheral Smear P/S (GBS)",
@@ -165,6 +203,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "350",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Reticulocyte Count",
@@ -172,6 +212,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "250",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Absolute Eosinophilcount (AEC)",
@@ -179,6 +221,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "250",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Bleeding Time",
@@ -186,6 +230,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "100",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Clotting Time",
@@ -193,6 +239,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "100",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "D-Dimer",
@@ -200,6 +248,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "1400",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Blood Urea Nitrogen",
@@ -208,6 +258,7 @@ export const Tests = [
     price: "150",
     type: "test",
     condition: "Kidney",
+    organ: "Adrenal Gland",
   },
   {
     title: "LDH",
@@ -215,6 +266,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "300",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "CPK-MB",
@@ -222,6 +275,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "700",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "CPK Nack",
@@ -229,6 +284,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "450",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Aingiotension Converting Ehzyme",
@@ -236,6 +293,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "1000",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Free Thyroid Profile",
@@ -243,6 +302,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "750",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Thyroid  Profile",
@@ -250,6 +311,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "450",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Viral Masker Test",
@@ -257,6 +320,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "1650",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Serum Prolactin",
@@ -264,6 +329,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "500",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Cuteimizing Hormone",
@@ -271,6 +338,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "500",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Beta HCG",
@@ -278,6 +347,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "700",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Ferritin",
@@ -285,6 +356,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "800",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "IgE Level",
@@ -293,6 +366,7 @@ export const Tests = [
     price: "700",
     type: "test",
     condition: "Allergy",
+    organ: "Adrenal Gland",
   },
   {
     title: "Total PSA ",
@@ -300,6 +374,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "700",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Vitamin B12",
@@ -307,6 +383,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "1200",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Vitamin D3",
@@ -314,6 +392,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "1450",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "CA 125",
@@ -321,6 +401,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "1200",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Widal Test",
@@ -328,6 +410,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "200",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Scrub Tythus Test",
@@ -335,6 +419,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "900",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Direct Coombs Test",
@@ -342,6 +428,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "800",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Malaria Antigen (MA)",
@@ -349,6 +437,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "200",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Sttol Occult Blood",
@@ -356,6 +446,9 @@ export const Tests = [
     specimen: "SERUM",
     price: "250",
     type: "test",
+    condition: "Diabetes HIV",
+
+    organ: "Adrenal Gland",
   },
   {
     title: "Sputum AFB Stain",
@@ -363,6 +456,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "250",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Semen Analysis",
@@ -370,6 +465,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "500",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Urine C/S",
@@ -377,6 +474,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "500",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Gram Stain Pleural Fluid",
@@ -384,6 +483,9 @@ export const Tests = [
     specimen: "SERUM",
     price: "250",
     type: "test",
+
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Stool Analysis",
@@ -391,6 +493,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "250",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Indirect Coombs Test",
@@ -398,6 +502,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "800",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Magnesium",
@@ -405,6 +511,9 @@ export const Tests = [
     specimen: "SERUM",
     price: "300",
     type: "test",
+    organ: "Adrenal Gland",
+
+    condition: "Diabetes HIV",
   },
   {
     title: "Phosphorus",
@@ -412,6 +521,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "450",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Adrenal Gland",
   },
   {
     title: "Follicle Stimulating Hormone (FSH)",
@@ -419,6 +530,8 @@ export const Tests = [
     specimen: "SERUM",
     price: "550",
     type: "test",
+    condition: "Diabetes HIV",
+    organ: "Bone",
   },
 ];
 
