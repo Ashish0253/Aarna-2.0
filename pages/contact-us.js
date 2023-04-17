@@ -38,10 +38,14 @@ export default function ContactUs() {
         data
       )
       .then((response) => {
+        var element2 = document.getElementById("back-page");
+        element2.classList.add("blur-sm");
         var element = document.getElementById("popup");
         element.classList.add("block");
         element.classList.remove("hidden");
         setTimeout(() => {
+          var element2 = document.getElementById("back-page");
+          element2.classList.remove("blur-sm");
           element.classList.remove("block");
           element.classList.add("hidden");
         }, 3000);
@@ -59,7 +63,10 @@ export default function ContactUs() {
   return (
     <div className="">
       <Breadcrumb links={BreadData} />
-      <div className=" xl:mx-56 md:mx-44 sm:mx-32 mx-4  bg-white rounded-xl mb-20 shadow-xl">
+      <div
+        id="back-page"
+        className=" xl:mx-56 md:mx-44 sm:mx-32 mx-4  bg-white rounded-xl mb-20 shadow-xl"
+      >
         <div className="px-12 pt-8 pb-8">
           <h1 className="text-teal-500 text-xl font-bold">Contact Us</h1>
           <hr class="w-full h-[2px] my-4 mx-auto bg-gray-100 border-0 dark:bg-gray-500" />
@@ -77,7 +84,7 @@ export default function ContactUs() {
             <div className="pt-8">
               <h1 className="text-teal-500 font-bold text-lg">Call Centre:</h1>
               <h1 className="text-teal-500 font-bold text-md">
-                For Queries, Appointments, Covid Test & Home Visits
+                For Queries, Appointments & Home Visits
               </h1>
               <div className="grid sm:grid-cols-2 pt-2">
                 <div className="flex justify-start items-start">
@@ -101,7 +108,7 @@ export default function ContactUs() {
                     className="pt-1 mr-2"
                   ></Image>
                   <p className="text-md text-gray-500 font-bold">
-                    +91 7454800226/288
+                    +91 9997579898
                   </p>
                 </div>
               </div>
@@ -131,7 +138,7 @@ export default function ContactUs() {
                   className="pt-1 mr-2"
                 ></Image>
                 <p className="text-md text-gray-500 font-bold">
-                  +91 7454800210,+91 7454800220
+                  +91 9068508080,+91 9997389898
                 </p>
               </div>
               <hr className="w-full h-[1px] my-4 mx-auto bg-gray-100 border-0 dark:bg-gray-400" />
@@ -238,25 +245,25 @@ export default function ContactUs() {
               <h1 className="text-teal-500 font-bold text-md pt-8">
                 Home Visit:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  0135-764658
+                  9997579898
                 </span>
               </h1>
               <h1 className="text-teal-500 font-bold text-md ">
                 Reception:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  +91 7465838222
+                  +91 9997579898
                 </span>
               </h1>
               <h1 className="text-teal-500 font-bold text-md ">
                 Time:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  8:00 AM to 8:00 PM
+                  Open 24 hours
                 </span>
               </h1>
               <h1 className="text-teal-500 font-bold text-md ">
                 Sunday:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  7:00 AM to 1:00 PM
+                  Open 24 hours
                 </span>
               </h1>
               <hr className="w-full h-[1px] my-4 mx-auto bg-gray-100 border-0 dark:bg-gray-400" />
@@ -272,13 +279,13 @@ export default function ContactUs() {
               <h1 className="text-teal-500 font-bold text-md pt-8">
                 Home Visit:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  0135-764658
+                  9068508080
                 </span>
               </h1>
               <h1 className="text-teal-500 font-bold text-md ">
                 Reception:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  +91 7465838222
+                  +91 9068508080
                 </span>
               </h1>
               <h1 className="text-teal-500 font-bold text-md ">
@@ -290,7 +297,7 @@ export default function ContactUs() {
               <h1 className="text-teal-500 font-bold text-md ">
                 Sunday:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  7:00 AM to 1:00 PM
+                  Closed
                 </span>
               </h1>
               <hr className="w-full h-[1px] my-4 mx-auto bg-gray-100 border-0 dark:bg-gray-400" />
