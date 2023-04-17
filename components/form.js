@@ -1,6 +1,10 @@
 import React from "react";
 import { Formik, Field, ErrorMessage, Form } from "formik";
 import * as Yup from "yup";
+import axios from "axios";
+import Image from "next/image";
+import popup from "../public/popUpimg.jpg";
+import Router from "next/router";
 
 const BookTestForm = ({ selectedTest }) => {
   const borderStyles = "border-2 rounded-lg border-gray-500 px-2 py-2";
@@ -21,144 +25,176 @@ const BookTestForm = ({ selectedTest }) => {
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          console.log(values);
-          setSubmitting(false);
+          const data = {
+            Form_Type: "Test Form",
+            Patient_Name: values.firstName + " " + values.lastName,
+            Mobile: values.mobile,
+            Gender: values.gender,
+            Collection: values.collectionType,
+            Email: values.email,
+            Date: values.date,
+            Time: values.time,
+          };
+
+          axios
+            .post(
+              "https://sheet.best/api/sheets/f935b9d9-4400-489a-8b5f-5eed992f2e2c",
+              data
+            )
+            .then((response) => {
+              var element2 = document.getElementById("test-back-page");
+              element2.classList.add("blur-sm");
+              var element = document.getElementById("popup");
+              element.classList.add("block");
+              element.classList.remove("hidden");
+              setTimeout(() => {
+                element2.classList.remove("blur-sm");
+                element.classList.remove("block");
+                element.classList.add("hidden");
+                Router.reload();
+              }, 3000);
+            });
+          setSubmitting(true);
         }, 400);
       }}
     >
       <Form className="grid justify-center gap-y-4 ">
-        <div>
-          <label htmlFor="selectedTest" className="font-bold">
-            Selected Test
-          </label>{" "}
-          <br />
-          <div className={`${borderStyles}`}>
-            <Field
-              name="selectedTest"
-              value={selectedTest}
-              type="text"
-              className="outline-none w-full"
-            />
-          </div>
-          <ErrorMessage name="selectedTest" />
-        </div>
-        <div className="flex gap-x-4">
+        <div id="test-back-page" className="grid justify-center gap-y-4 ">
           <div>
-            {/* <label htmlFor="firstName">First Name</label> */}
+            <label htmlFor="selectedTest" className="font-bold">
+              Selected Test
+            </label>{" "}
+            <br />
             <div className={`${borderStyles}`}>
               <Field
-                name="firstName"
-                placeholder="First Name"
+                name="selectedTest"
+                value={selectedTest}
                 type="text"
                 className="outline-none w-full"
               />
             </div>
-            <ErrorMessage name="firstName" />
+            <ErrorMessage name="selectedTest" />
+          </div>
+          <div className="flex gap-x-4">
+            <div>
+              {/* <label htmlFor="firstName">First Name</label> */}
+              <div className={`${borderStyles}`}>
+                <Field
+                  name="firstName"
+                  placeholder="First Name"
+                  type="text"
+                  className="outline-none w-full"
+                />
+              </div>
+              <ErrorMessage name="firstName" />
+            </div>
+
+            <div>
+              {/* <label htmlFor="lastName">last Name</label> */}
+              <div className={`${borderStyles}`}>
+                <Field
+                  name="lastName"
+                  placeholder="Last Name"
+                  type="text"
+                  className="outline-none w-full"
+                />
+              </div>
+              <ErrorMessage name="lastName" />
+            </div>
+          </div>
+
+          <div className="flex gap-x-4">
+            <div>
+              {/* <label htmlFor="firstName">First Name</label> */}
+              <div className={`${borderStyles}`}>
+                <Field
+                  name="mobile"
+                  placeholder="Mobile"
+                  type="text"
+                  className="outline-none w-full"
+                />
+              </div>
+              <ErrorMessage name="mobile" />
+            </div>
+
+            <div>
+              {/* <label htmlFor="lastName">last Name</label> */}
+              <div className={`${borderStyles}`}>
+                <Field
+                  name="gender"
+                  placeholder="Gender"
+                  type="text"
+                  className="outline-none w-full"
+                />
+              </div>
+              <ErrorMessage name="gender" />
+            </div>
           </div>
 
           <div>
-            {/* <label htmlFor="lastName">last Name</label> */}
+            {/* <label htmlFor="email">Email Address</label> */}
             <div className={`${borderStyles}`}>
               <Field
-                name="lastName"
-                placeholder="Last Name"
+                name="collectionType"
+                placeholder="Collection Type"
                 type="text"
                 className="outline-none w-full"
               />
             </div>
-            <ErrorMessage name="lastName" />
-          </div>
-        </div>
-
-        <div className="flex gap-x-4">
-          <div>
-            {/* <label htmlFor="firstName">First Name</label> */}
-            <div className={`${borderStyles}`}>
-              <Field
-                name="mobile"
-                placeholder="Mobile"
-                type="text"
-                className="outline-none w-full"
-              />
-            </div>
-            <ErrorMessage name="mobile" />
+            <ErrorMessage name="collectionType" className="text-red-600" />
           </div>
 
           <div>
-            {/* <label htmlFor="lastName">last Name</label> */}
+            {/* <label htmlFor="email">Email Address</label> */}
             <div className={`${borderStyles}`}>
               <Field
-                name="gender"
-                placeholder="Gender"
-                type="text"
+                name="email"
+                placeholder="Email"
+                type="email"
                 className="outline-none w-full"
               />
             </div>
-            <ErrorMessage name="gender" />
+            <ErrorMessage name="email" className="text-red-600" />
           </div>
-        </div>
 
-        <div>
-          {/* <label htmlFor="email">Email Address</label> */}
-          <div className={`${borderStyles}`}>
-            <Field
-              name="collectionType"
-              placeholder="Collection Type"
-              type="text"
-              className="outline-none w-full"
-            />
-          </div>
-          <ErrorMessage name="collectionType" className="text-red-600" />
-        </div>
-
-        <div>
-          {/* <label htmlFor="email">Email Address</label> */}
-          <div className={`${borderStyles}`}>
-            <Field
-              name="email"
-              placeholder="Email"
-              type="email"
-              className="outline-none w-full"
-            />
-          </div>
-          <ErrorMessage name="email" className="text-red-600" />
-        </div>
-
-        <div className="flex justify-between">
-          <div>
-            {/* <label htmlFor="firstName">First Name</label> */}
-            <div className={`${borderStyles}`}>
-              <Field
-                name="date"
-                // placeholder="date"
-                type="date"
-                className="outline-none w-full"
-              />
+          <div className="flex justify-between">
+            <div>
+              {/* <label htmlFor="firstName">First Name</label> */}
+              <div className={`${borderStyles}`}>
+                <Field
+                  name="date"
+                  // placeholder="date"
+                  type="date"
+                  className="outline-none w-full"
+                />
+              </div>
+              <ErrorMessage name="date" />
             </div>
-            <ErrorMessage name="date" />
-          </div>
 
-          <div>
-            {/* <label htmlFor="lastName">last Name</label> */}
-            <div className={`${borderStyles}`}>
-              <Field
-                name="time"
-                // placeholder="Gender"
-                type="time"
-                className="outline-none w-full"
-              />
+            <div>
+              {/* <label htmlFor="lastName">last Name</label> */}
+              <div className={`${borderStyles}`}>
+                <Field
+                  name="time"
+                  // placeholder="Gender"
+                  type="time"
+                  className="outline-none w-full"
+                />
+              </div>
+              <ErrorMessage name="time" />
             </div>
-            <ErrorMessage name="time" />
           </div>
-        </div>
 
-        <button
-          type="submit"
-          className="border-2 border-transparent my-4 py-2 px-4 bg-quaternary font-bold text-white rounded-lg"
-        >
-          Book Now
-        </button>
+          <button
+            type="submit"
+            className="border-2 border-transparent my-4 py-2 px-4 bg-quaternary font-bold text-white rounded-lg"
+          >
+            Book Now
+          </button>
+        </div>
+        <div id="popup" className="z-9 fixed bottom-1/4 right-1/3 hidden">
+          <Image src={popup} height={400} width={400} alt=""></Image>
+        </div>
       </Form>
     </Formik>
   );
