@@ -1,14 +1,15 @@
 export const healthPackages = [
   {
+    id: 1,
     title: "Basic Fever Panel",
     numberOfTests: 7,
     tests: ["CBC", "ESR", "MP", "WIDAL", "URINE R/M"],
     parameters: 83,
-
     price: 1500,
     offerPrice: 799,
   },
   {
+    id: 2,
     title: "Advanced Basic Fever Panel",
     numberOfTests: 7,
     tests: [
@@ -20,29 +21,29 @@ export const healthPackages = [
       "DENGUE COMBO",
     ],
     parameters: 83,
-
     price: 2000,
     offerPrice: 1699,
   },
   {
+    id: 3,
     title: "Women Health Panel",
     numberOfTests: 7,
     tests: ["CBC", "TFT", "LH", "FSH", "PROLACTIN", "URINE R/M"],
     parameters: 83,
-
     price: 1500,
     offerPrice: 1299,
   },
   {
+    id: 4,
     title: "Basic Arthritis Panel",
     numberOfTests: 7,
     tests: ["CBC", "URIC ACID", "CALCIUM", "RA FACTOR", "CRP"],
     parameters: 83,
-
     price: 1500,
     offerPrice: 899,
   },
   {
+    id: 5,
     title: "Advance Arthritis Panel",
     numberOfTests: 7,
     tests: [
@@ -55,29 +56,29 @@ export const healthPackages = [
       "XRAY DOUBLE VIEW",
     ],
     parameters: 83,
-
     price: 2499,
     offerPrice: 1999,
   },
   {
+    id: 6,
     title: "Diabetes Care Package",
     numberOfTests: 7,
     tests: ["FBS", "PPBS", "HBA1C"],
     parameters: 83,
-
     price: 1000,
     offerPrice: 399,
   },
   {
+    id: 7,
     title: "Basic Diabetes Care Package",
     numberOfTests: 7,
     tests: ["FBS", "PPBS", "HBA1C", "LIPID PROFILE", "CREATININE", "UREA"],
     parameters: 83,
-
     price: 1500,
     offerPrice: 999,
   },
   {
+    id: 8,
     title: "Advanced Diabetes Care Package",
     numberOfTests: 7,
     tests: [
@@ -92,11 +93,11 @@ export const healthPackages = [
       "VITAMIN D3",
     ],
     parameters: 83,
-
     price: 3000,
     offerPrice: 2799,
   },
   {
+    id: 9,
     title: "Complete Health Panel",
     numberOfTests: 36,
     tests: ["CBC", "LFT", "KFT", "Blood Sugar Random"],
@@ -105,50 +106,7 @@ export const healthPackages = [
     offerPrice: 799,
   },
   {
-    title: "Complete Health Panel",
-    numberOfTests: 36,
-    tests: ["CBC", "LFT", "KFT", "Blood Sugar Random", "Urine R/M"],
-    parameters: 83,
-    price: 1200,
-    offerPrice: 999,
-  },
-  {
-    title: "Complete Health Panel",
-    numberOfTests: 36,
-    tests: [
-      "CBC",
-      "LFT",
-      "KFT",
-      "Blood Sugar Random",
-      "Urine R/M",
-      "Lipid Profile",
-      "TFT",
-    ],
-
-    parameters: 83,
-    price: 1999,
-    offerPrice: 1499,
-  },
-  {
-    title: "Complete Health Panel",
-    numberOfTests: 36,
-    tests: [
-      "CBC",
-      "LFT",
-      "KFT",
-      "Blood Sugar Random",
-      "Urine R/M",
-      "Lipid Profile",
-      "TFT",
-      "Vitamin D3",
-      "Vitamin B12",
-      "HB1AC",
-    ],
-    parameters: 83,
-    price: 3499,
-    offerPrice: 2999,
-  },
-  {
+    id: 10,
     title: "Complete Health Panel",
     numberOfTests: 36,
     tests: [
@@ -171,6 +129,7 @@ export const healthPackages = [
     offerPrice: 4200,
   },
   {
+    id: 11,
     title: "Complete Health Panel",
     numberOfTests: 36,
     tests: ["CBC", "LFT", "KFT"],
