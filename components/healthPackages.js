@@ -1,6 +1,7 @@
 // import Carousel from "react-multi-carousel";
 // import "react-multi-carousel/lib/styles.css";
 import React from "react";
+import Link from "next/link";
 import { healthPackages } from "../constants/healthPackages";
 // import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import Slider from "react-slick";
@@ -93,9 +94,11 @@ export default function HealthPackages() {
                   </div>
                 </div>
 
-                <div className="bg-[#f27d27] border-2 border-transparent font-semibold rounded-2xl flex justify-center text-base py-2 w-[90%] absolute left-4 bottom-2">
-                  Book Now
-                </div>
+                <Link href={item.title}>
+                  <div className="bg-[#f27d27] border-2 border-transparent font-semibold rounded-2xl flex justify-center text-base py-2 w-[90%] absolute left-4 bottom-2">
+                    <button>Book Now</button>
+                  </div>
+                </Link>
               </div>
             );
           })}
