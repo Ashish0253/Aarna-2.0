@@ -7,7 +7,7 @@ const content = [
     title: "CT Scan",
     price: "Starting @",
     price2: "₹3000",
-    price3: "₹900",
+    price3: "₹2500",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu volutpat odio facilisis mauris.",
   },
@@ -19,7 +19,7 @@ const content = [
     title: "Ultrasound",
     price: "Starting @",
     price2: "₹6000",
-    price3: "₹1500",
+    price3: "₹1400",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu volutpat odio facilisis mauris.",
   },
@@ -31,7 +31,7 @@ const content = [
     title: "Digital X-Ray",
     price: "Starting @",
     price2: "₹1200",
-    price3: "₹500",
+    price3: "₹400",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu volutpat odio facilisis mauris.",
   },
@@ -43,7 +43,7 @@ const content = [
     title: "ECG Test",
     price: "Starting @",
     price2: "₹2000",
-    price3: "₹1500",
+    price3: "₹250",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu volutpat odio facilisis mauris.",
   },

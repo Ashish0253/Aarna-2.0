@@ -76,7 +76,7 @@ export default function HealthPackages() {
                       Includes: {item.parameters} parameters
                     </h4>
                     <ul className="px-3 py-1 text-sm font-normal">
-                      {item.list.map((content) => (
+                      {item.tests.slice(0, 3).map((content) => (
                         <li key={content}>{content}</li>
                       ))}
                     </ul>

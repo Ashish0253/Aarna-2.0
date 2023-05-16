@@ -100,9 +100,9 @@ function HealthScans() {
                 </h3>
                 <h3 className="font-bold text-lg text-[#0aa1af] py-1">
                   {item.price}
-                  <span className="line-through	font-light">
+                  {/* <span className="line-through	font-light">
                     {item.price2}
-                  </span>{" "}
+                  </span>{" "} */}
                   {item.price3}
                 </h3>
                 {/* <div className= " hidden sm:block">
@@ -111,12 +111,12 @@ function HealthScans() {
                 {/* <p className="p-5 scan-desc">{item.description}</p> */}
                 {/* </Link> */}
                 <Link href={item.page}>
-                <button
-                  to={item.page}
-                  className=" mt-6 border-transparent rounded-xl px-10 py-2 border-2 bg-[#f27d27] text-white font-bold "
-                >
-                  Book Now
-                </button>
+                  <button
+                    to={item.page}
+                    className=" mt-6 border-transparent rounded-xl px-10 py-2 border-2 bg-[#f27d27] text-white font-bold "
+                  >
+                    Book Now
+                  </button>
                 </Link>
                 {/* <div className="border-transparent rounded-lg px-4 py-1 mt-4 border-2 bg-[#1ebaba] text-white hover:scale-105">
                   

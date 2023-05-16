@@ -138,7 +138,7 @@ export default function ContactUs() {
                   className="pt-1 mr-2"
                 ></Image>
                 <p className="text-md text-gray-500 font-bold">
-                  +91 9068508080,+91 9997389898
+                  +91 9997579898
                 </p>
               </div>
               <hr className="w-full h-[1px] my-4 mx-auto bg-gray-100 border-0 dark:bg-gray-400" />

@@ -22,10 +22,10 @@ export default function Home({ setSidebar, ref3 }) {
       title: "health panel",
       img: "/banners/BANNERS1.jpg",
     },
-    {
-      title: "health screening",
-      img: "/banners/BANNERS2.jpg",
-    },
+    // {
+    //   title: "health screening",
+    //   img: "/banners/BANNERS2.jpg",
+    // },
     {
       title: "complete health panel",
       img: "/banners/BANNERS3.jpg",
