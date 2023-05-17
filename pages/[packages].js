@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
 import { healthPackages } from "@/constants/healthPackages";
 import Breadcrumb from "@/components/Breadcrumb";
-import ScanForm from "@/components/ScanForm";
+import React, { useState } from "react";
+import PackagesForm from "@/components/PackagesForm";
+// import ScanForm from "@/components/ScanForm";
 
 const Packages = () => {
-  // console.log(healthPackages);
-
   const router = useRouter();
   const packageTitle = router.query.packages;
 
@@ -66,8 +66,8 @@ const Packages = () => {
             </p>
           )}
         </div>
-        <div className="mt-10 sm:col-span-2 lg:col-span-1">
-          <ScanForm scan={packageTitle}></ScanForm>
+        <div className="mt-2 sm:col-span-2 lg:col-span-1">
+          <PackagesForm package={packageTitle}></PackagesForm>
         </div>
       </div>
     </div>
