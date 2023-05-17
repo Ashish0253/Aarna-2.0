@@ -66,10 +66,10 @@ export default function HealthPackages() {
             return (
               <div
                 key={item.title}
-                className=" mx-0 relative  text-white h-[330px] h-"
+                className=" mx-0 relative  text-white sm:h-[330px] h-[340px]"
               >
                 <div className="border-2 p-5 rounded-2xl bg-tertiary pb-1 h-[300px]">
-                  <div className="text-2xl font-bold p-2 h-20">
+                  <div className="text-2xl font-bold p-2 h-24 sm:h-16">
                     {item.title}
                   </div>
                   <div className="p-2 font-semibold">

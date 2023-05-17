@@ -50,7 +50,7 @@ export default function Sidebar({ sidebar }) {
                   />
                 </div>
                 <div className="">Upload </div>
-                <div> Description</div>
+                <div> Prescription</div>
               </Link>
             </div>
             <div className=" grid justify-items-center p-2">

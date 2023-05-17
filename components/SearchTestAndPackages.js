@@ -61,7 +61,7 @@ export default function SearchTestAndPackages() {
     <>
       <div className="bg-white border-2 border-transparent rounded-2xl sm:mx-[15%] mx-4 my-10 pb-5 px-10 shadow-xl">
         <div className="text-2xl font-bold text-black pt-8 pb-2">
-          Search Test and Packages
+          Search Test
         </div>
 
         {/* filters */}
@@ -136,7 +136,7 @@ export default function SearchTestAndPackages() {
 
         <div className="text-gray-500 flex justify-end underline text-sm p-1 font-semibold">
           <button>
-            <Link href="/search-test-packages">View All</Link>{" "}
+            <Link href="/search-test">View All</Link>{" "}
           </button>{" "}
         </div>
       </div>
