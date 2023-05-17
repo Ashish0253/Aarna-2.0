@@ -26,7 +26,7 @@ const BookTestForm = ({ selectedTest }) => {
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           const data = {
-            Form_Type: "Test Form",
+            Form_Type: "Test and Packages Form",
             Patient_Name: values.firstName + " " + values.lastName,
             Mobile: values.mobile,
             Gender: values.gender,
