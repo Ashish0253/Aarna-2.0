@@ -12,7 +12,7 @@ export default function ScanForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
-      Form_Type: "Scans and Packages Form",
+      Form_Type: "Scans Form",
       Patient_Name: name,
       Mobile: phone,
       scan: props.scan,
@@ -44,7 +44,7 @@ export default function ScanForm(props) {
       <div className=" bg-[#fcf6e4] text-sm pt-6 font-medium text-black flex justify-start items-start px-3">
         <Image src={Person} height={80} width={80} className="" alt=""></Image>
         <p className="py-3">
-          {"'"}I only trust Aarna for all my tests and scans.{"'"}
+          {"'"}I only trust Aarna for all scans.{"'"}
         </p>
       </div>
       <h1 className="text-center px-10 bg-[#fcbe57] font-semibold text-lg">
