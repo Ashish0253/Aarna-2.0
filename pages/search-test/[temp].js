@@ -31,8 +31,8 @@ const Temp = () => {
   return (
     <div>
       <Breadcrumb links={BreadCrumbData} />
-      <div className="bg-white my-20 pb-16 sm:mx-20 lg:mx-24 xl:mx-52 rounded-xl p-10 grid grid-cols-2 lg:grid-cols-2 gap-12 ">
-        <div className="text-center sm:col-span-2 flex justify-around">
+      <div className="bg-white my-20 pb-16 sm:mx-20 lg:mx-24 xl:mx-52 mx-5 rounded-xl p-10 grid sm:grid-cols-2 lg:grid-cols-2 gap-12 ">
+        <div className="text-center sm:col-span-2 sm:flex justify-around">
           <div className="grid justify-items-center">
             <Image
               src={testsInConditions[index].icon}
@@ -45,8 +45,8 @@ const Temp = () => {
             </h1>
           </div>
 
-          <div>
-            <h3 className="font-bold">
+          <div className="grid justify-items-center">
+            <h3 className="font-bold pt-10">
               Tests Related to - {testsInConditions[index].title}
             </h3>
             <ol className="text-md font-semibold pt-3 text-teal-600" type="1">

@@ -100,12 +100,17 @@ export default function SearchTestAndPackages() {
                     key={item.name}
                     className="border-2 border-transparent rounded-md mx-2 grid justify-center"
                   >
-                    <Image
-                      src={item.icon}
-                      alt={item.name}
-                      width={200}
-                      height={100}
-                    />
+                    <Link
+                      href={item.link}
+                      className="grid justify-items-center"
+                    >
+                      <Image
+                        src={item.icon}
+                        alt={item.name}
+                        width={200}
+                        height={100}
+                      />
+                    </Link>
                     <div className="grid justify-center">
                       <p className="text-center">{item.name}</p>
                     </div>
