@@ -11,12 +11,12 @@ export const conditions = [
   },
   {
     name: "HIV Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/HIV Test.svg",
     link: "/search-test/HIV Test",
   },
   {
     name: "Arthritis Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Arthritis Test.svg",
     link: "/search-test/Arthritis Test",
   },
   {
@@ -31,17 +31,17 @@ export const conditions = [
   },
   {
     name: "Stool Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Stool Test.svg",
     link: "/search-test/Stool Test",
   },
   {
     name: "Thyroid Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Thyroid Test.svg",
     link: "/search-test/Thyroid Test",
   },
   {
     name: "CBC Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Blood Disorders.svg",
     link: "/search-test/CBC Test",
   },
   {
@@ -51,12 +51,12 @@ export const conditions = [
   },
   {
     name: "Urine Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Urine Test.svg",
     link: "/search-test/Urine Test",
   },
   {
     name: "Dengue Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Dengue Test.svg",
     link: "/search-test/Dengue Test",
   },
   {
@@ -71,12 +71,12 @@ export const conditions = [
   },
   {
     name: "Immunity Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Immunity Test.svg",
     link: "/search-test/Immunity Test",
   },
   {
     name: "STD Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/STD Test.svg",
     link: "/search-test/STD Test",
   },
 ];
@@ -118,7 +118,7 @@ export const testsInConditions = [
   },
   {
     title: "HIV Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/HIV Test.svg",
     tests: [
       "Lipid Profile",
       "LFT",
@@ -131,7 +131,7 @@ export const testsInConditions = [
   },
   {
     title: "Arthritis Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Arthritis Test.svg",
     tests: [
       "Complete Hemogram",
       "Uric Acid",
@@ -177,7 +177,7 @@ export const testsInConditions = [
   },
   {
     title: "Stool Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Stool Test.svg",
     tests: [
       "Color-Stool",
       "Consistency-Stool",
@@ -194,12 +194,12 @@ export const testsInConditions = [
   {
     title: "Thyroid Test",
 
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Thyroid Test.svg",
     tests: ["T3", "T4", "TSH"],
   },
   {
     title: "CBC Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Blood Disorders.svg",
     tests: [
       "Absolute Basophils Count",
       "Absolute Eosinophils Count",
@@ -238,12 +238,12 @@ export const testsInConditions = [
   },
   {
     title: "Urine Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Urine Test.svg",
     tests: ["Urine Routine", "Urine Microscopy"],
   },
   {
     title: "Dengue Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Dengue Test.svg",
     tests: ["Dengue NS1 Antigen", "Dengue IgG & IgM Antibody"],
   },
   {
@@ -266,7 +266,7 @@ export const testsInConditions = [
   },
   {
     title: "Immunity Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/Immunity Test.svg",
     tests: [
       "Lipid Profile",
       "LFT",
@@ -279,7 +279,7 @@ export const testsInConditions = [
   },
   {
     title: "STD Test",
-    icon: "/searchTestAndPackages/Abortions.svg",
+    icon: "/searchTestAndPackages/STD Test.svg",
     tests: [
       "Hepatitis B Virus (HBV) HbsAg Screening",
       "Anti HCV",

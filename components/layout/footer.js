@@ -7,11 +7,11 @@ import { BsFacebook, BsInstagram, BsTwitter, BsLinkedin } from "react-icons/bs";
 export default function Footer() {
   return (
     <div className="flex-row-reverse sm:grid">
-      <div className=" grid sm:grid-cols-4 text-white bg-tertiary px-4 sm:px-[15%]  pt-5 ">
+      <div className=" grid sm:grid-cols-4 text-white bg-tertiary px-4 sm:px-[15%] pt-5">
         {footerLinks.map((footerLink, index) => (
           <div
             key={footerLink.title}
-            className={`${index !== footerLinks.length - 1 ? "" : "pl-4"}`}
+            className={`${index !== footerLinks.length - 1 ? "" : "pl-4"} pt-8`}
           >
             <div className="font-bold text-xl p-4 pl-0 pb-1">
               {footerLink.title}
