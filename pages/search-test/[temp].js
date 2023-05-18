@@ -28,6 +28,8 @@ const Temp = () => {
     },
   ];
 
+  console.log(sectionTitle);
+
   return (
     <div>
       <Breadcrumb links={BreadCrumbData} />
@@ -35,7 +37,7 @@ const Temp = () => {
         <div className="text-center sm:col-span-2 sm:flex justify-around">
           <div className="grid justify-items-center">
             <Image
-              src={testsInConditions[index].icon}
+              // src={testsInConditions[index].icon}
               alt={testsInConditions[index].title}
               width={200}
               height={100}
