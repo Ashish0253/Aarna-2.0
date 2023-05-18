@@ -36,12 +36,14 @@ const Temp = () => {
       <div className="bg-white my-20 pb-16 sm:mx-20 lg:mx-24 xl:mx-52 mx-5 rounded-xl p-10 grid sm:grid-cols-2 lg:grid-cols-2 gap-12 ">
         <div className="text-center sm:col-span-2 sm:flex justify-around">
           <div className="grid justify-items-center">
-            <Image
-              // src={testsInConditions[index].icon}
-              alt={testsInConditions[index].title}
-              width={200}
-              height={100}
-            />
+            {index >= 0 && (
+              <Image
+                src={testsInConditions[index].icon}
+                alt={testsInConditions[index].title}
+                width={200}
+                height={100}
+              />
+            )}
             <h1 className="text-black text-4xl font-bold py-4">
               {testsInConditions[index].title}
             </h1>
