@@ -1,8 +1,5 @@
 import React, { useState, useRef } from "react";
-import {
-  conditions,
-  lifeStyleDisorders,
-} from "@/constants/searchTestAndPackages";
+import { conditions } from "@/constants/searchTestAndPackages";
 
 import Slider from "react-slick";
 import RenderArrows from "@/utils/RenderArrows";
