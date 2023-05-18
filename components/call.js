@@ -17,7 +17,7 @@ export default function Call() {
         <button className=" flex justify-center border-2 border-transparent bg-[#f27d27] text-white rounded-lg p-2">
           <FiPhoneCall className="m-1 text-black" />{" "}
           <div className="px-1 text-sm text-black  font-bold sm:text-base">
-            Call Now to Book Your Test
+            <a href="tel:9997579898">Call Now to Book Your Test</a>
           </div>
         </button>
       </div>
