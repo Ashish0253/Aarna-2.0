@@ -44,20 +44,26 @@ const Temp = () => {
                 height={100}
               />
             )}
-            <h1 className="text-black text-4xl font-bold py-4">
-              {testsInConditions[index].title}
-            </h1>
+            {index >= 0 && (
+              <h1 className="text-black text-4xl font-bold py-4">
+                {testsInConditions[index].title}
+              </h1>
+            )}
           </div>
 
           <div className="grid justify-items-center">
-            <h3 className="font-bold pt-10">
-              Tests Related to - {testsInConditions[index].title}
-            </h3>
-            <ol className="text-md font-semibold pt-3 text-teal-600" type="1">
-              {testsInConditions[index].tests.map((test, i) => (
-                <li key={i}>{test}</li>
-              ))}
-            </ol>
+            {index >= 0 && (
+              <h3 className="font-bold pt-10">
+                Tests Related to - {testsInConditions[index].title}
+              </h3>
+            )}
+            {index >= 0 && (
+              <ol className="text-md font-semibold pt-3 text-teal-600" type="1">
+                {testsInConditions[index].tests.map((test, i) => (
+                  <li key={i}>{test}</li>
+                ))}
+              </ol>
+            )}
           </div>
         </div>
       </div>
