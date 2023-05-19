@@ -112,8 +112,6 @@ export const testsInConditions = [
       "HbA1c",
       "Urine Routine & Microscopy",
       "Blood Glucose Fasting",
-      "Blood Glucose Postprandial",
-      "Blood Glucose Random",
     ],
   },
   {

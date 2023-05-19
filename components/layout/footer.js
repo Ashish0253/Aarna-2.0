@@ -71,9 +71,9 @@ export default function Footer() {
           Cookie Policy
         </p>
         <p>
-          Only Pathology reports available online. For X-Ray, Ultrasound, ECG,
-          TMT, Echo, PFT, Uroflowmetry reports, please visit the concerned
-          center where test has been conducted
+          Only Pathology reports available online. For X-Ray, Ultrasound, ECG
+          reports, please visit the concerned center where test has been
+          conducted
         </p>
       </div>
     </div>
