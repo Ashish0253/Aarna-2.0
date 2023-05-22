@@ -4,8 +4,8 @@ export const healthPackages = [
     title: "Basic Fever Panel",
     numberOfTests: 7,
     tests: ["CBC", "ESR", "MP", "WIDAL", "URINE R/M"],
-    parameters: 83,
-    price: 1500,
+    parameters: 37,
+    price: 1599,
     offerPrice: 799,
   },
   {
@@ -20,8 +20,8 @@ export const healthPackages = [
       "TYPHIDOT",
       "DENGUE COMBO",
     ],
-    parameters: 83,
-    price: 2000,
+    parameters: 41,
+    price: 3399,
     offerPrice: 1699,
   },
   {
@@ -29,8 +29,8 @@ export const healthPackages = [
     title: "Women Health Panel",
     numberOfTests: 7,
     tests: ["CBC", "TFT", "LH", "FSH", "PROLACTIN", "URINE R/M"],
-    parameters: 83,
-    price: 1500,
+    parameters: 40,
+    price: 2599,
     offerPrice: 1299,
   },
   {
@@ -38,8 +38,8 @@ export const healthPackages = [
     title: "Basic Arthritis Panel",
     numberOfTests: 7,
     tests: ["CBC", "URIC ACID", "CALCIUM", "RA FACTOR", "CRP"],
-    parameters: 83,
-    price: 1500,
+    parameters: 18,
+    price: 1799,
     offerPrice: 899,
   },
   {
@@ -55,8 +55,8 @@ export const healthPackages = [
       "VITAMIN D3",
       "XRAY DOUBLE VIEW",
     ],
-    parameters: 83,
-    price: 2499,
+    parameters: 21,
+    price: 3999,
     offerPrice: 1999,
   },
   {
@@ -64,8 +64,8 @@ export const healthPackages = [
     title: "Diabetes Care Package",
     numberOfTests: 7,
     tests: ["FBS", "PPBS", "HBA1C"],
-    parameters: 83,
-    price: 1000,
+    parameters: 3,
+    price: 799,
     offerPrice: 399,
   },
   {
@@ -73,8 +73,8 @@ export const healthPackages = [
     title: "Basic Diabetes Care Package",
     numberOfTests: 7,
     tests: ["FBS", "PPBS", "HBA1C", "LIPID PROFILE", "CREATININE", "UREA"],
-    parameters: 83,
-    price: 1500,
+    parameters: 12,
+    price: 1999,
     offerPrice: 999,
   },
   {
@@ -92,8 +92,8 @@ export const healthPackages = [
       "URINE R/M",
       "VITAMIN D3",
     ],
-    parameters: 83,
-    price: 3000,
+    parameters: 66,
+    price: 5599,
     offerPrice: 2799,
   },
   {
@@ -102,7 +102,7 @@ export const healthPackages = [
     numberOfTests: 36,
     tests: ["CBC", "LFT", "KFT", "Blood Sugar Random"],
     parameters: 36,
-    price: 999,
+    price: 1599,
     offerPrice: 799,
   },
   {
@@ -111,7 +111,7 @@ export const healthPackages = [
     numberOfTests: 56,
     tests: ["CBC", "LFT", "KFT", "Blood Sugar Random", "Urine R/M"],
     parameters: 56,
-    price: 1199,
+    price: 1999,
     offerPrice: 999,
   },
 
@@ -129,7 +129,7 @@ export const healthPackages = [
       "TFT",
     ],
     parameters: 66,
-    price: 1999,
+    price: 2999,
     offerPrice: 1499,
   },
   {
@@ -149,7 +149,7 @@ export const healthPackages = [
       "HB1AC",
     ],
     parameters: 69,
-    price: 3499,
+    price: 5999,
     offerPrice: 3000,
   },
   {
@@ -172,7 +172,7 @@ export const healthPackages = [
       "ECG",
     ],
     parameters: 72,
-    price: 4499,
+    price: 8399,
     offerPrice: 4200,
   },
 ];
