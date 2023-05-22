@@ -155,7 +155,7 @@ export default function ContactUs() {
                     </p>
                   </div>
                   <div className="">
-                    <a href="tel:7503909232">
+                    <a href="tel:9997579898">
                       <button className=" bg-orange-500 text-black text-xsm sm:text-sm font-semibold w-full p-2 rounded-xl flex justify-center items-center gap-2">
                         <svg
                           stroke="currentColor"
