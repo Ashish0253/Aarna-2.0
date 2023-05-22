@@ -75,6 +75,17 @@ export default function Footer() {
           reports, please visit the concerned center where test has been
           conducted
         </p>
+        <p>
+          Site designed and created by{" "}
+          <a
+            className="hover:text-white"
+            href="tel:7503909232"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AV WebWorks
+          </a>
+        </p>
       </div>
     </div>
   );
