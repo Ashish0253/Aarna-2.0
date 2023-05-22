@@ -245,7 +245,7 @@ export default function ContactUs() {
               <h1 className="text-teal-500 font-bold text-md pt-8">
                 Home Visit:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  9997579898
+                  +91 9997579898
                 </span>
               </h1>
               <h1 className="text-teal-500 font-bold text-md ">
@@ -279,7 +279,7 @@ export default function ContactUs() {
               <h1 className="text-teal-500 font-bold text-md pt-8">
                 Home Visit:{" "}
                 <span className="text-md text-gray-500 font-semibold">
-                  9068508080
+                  +91 9068508080
                 </span>
               </h1>
               <h1 className="text-teal-500 font-bold text-md ">

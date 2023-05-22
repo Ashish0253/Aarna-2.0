@@ -41,13 +41,13 @@ export default function Footer() {
             </div>
             <div className="px-4 text-sm font-semibold">
               <p>
-                Helpline(24x7) - <a href="tel:9997579898">9997579898</a>
+                Helpline(24x7) - <a href="tel:9997579898">+91 9997579898</a>
               </p>
               <p>
-                Radiology - <a href="tel:9068208080">9068208080</a>
+                Radiology - <a href="tel:9068208080">+91 9068208080</a>
               </p>
               <p>
-                Pathology - <a href="tel:8648808080">8648808080</a>
+                Pathology - <a href="tel:8648808080">+91 8648808080</a>
               </p>
             </div>
           </div>
