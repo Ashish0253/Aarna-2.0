@@ -14,8 +14,8 @@ export default function AboutUs() {
   return (
     <div>
       <Breadcrumb links={breadcrumbData} />
-      <section className="p-10 grid grid-cols-2">
-        <div className="flex justify-end pr-4">
+      <section className="p-10 sm:grid grid-cols-2">
+        <div className="sm:flex justify-end pr-4">
           <Image
             src="/aboutUs/Our Mission.svg"
             alt="rectangle"
@@ -25,7 +25,7 @@ export default function AboutUs() {
         </div>
         <div className="p-4">
           <div className="font-bold text-primary text-xl p-2">Our Mission</div>
-          <p className="p-2 text-base max-w-[60%]">
+          <p className="p-2 text-base sm:max-w-[60%]">
             At Aarna Diagnostic Centre, our mission is to provide accurate,
             timely diagnostics and exceptional patient care, utilizing
             cutting-edge technology and a highly trained team. We strive to
@@ -36,17 +36,17 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
-      <section className="p-10 pt-0 grid grid-cols-2">
-        <div className="p-4 grid justify-items-end">
+      <section className="p-10 pt-0 sm:grid grid-cols-2">
+        <div className="p-4 grid sm:justify-items-end">
           <div className="font-bold text-primary text-xl p-2">Our Vision</div>
-          <div className="p-2 flex text-right text-base max-w-[60%]">
+          <div className="p-2 flex sm:text-right text-base sm:max-w-[60%]">
             To become the most trusted and accessible diagnostic service
             provider, promoting health and well-being through exceptional
             patient care, cutting-edge technology, and continuous innovation in
             the field of diagnostics.
           </div>
         </div>
-        <div className="flex justify-start pl-4">
+        <div className="sm:flex justify-start pl-4">
           <Image
             src="/aboutUs/Our Vision.svg"
             alt="our vision"

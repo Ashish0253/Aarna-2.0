@@ -1,6 +1,6 @@
 export const why = [
   {
-    title: "3 Lakh",
+    title: "More than 3 Lacs",
     content: "Samples Collected",
     img: "/whyAarna/3Lakh Sample Collected.svg",
   },
@@ -25,7 +25,7 @@ export const why = [
     img: "/whyAarna/testsAndPanels.svg",
   },
   {
-    title: "300",
+    title: "300+",
     content: "Tests per day",
     img: "/whyAarna/Labs.svg",
   },
