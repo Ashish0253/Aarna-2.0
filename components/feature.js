@@ -13,7 +13,7 @@ export default function Feature({ setSidebar, ref3 }) {
   return (
     <div
       ref={ref3}
-      className="bg-tertiary text-white font-semibold text-xs sm:text-base sm:px-[18%] py-4 "
+      className="bg-tertiary text-white font-semibold text-xs sm:text-base sm:px-[18%] sm:py-4 py-1 "
     >
       <div className=" grid grid-cols-4 sm:mx-[10%]">
         <Link href="/" className="grid justify-items-center border-r-2 ">
@@ -22,7 +22,7 @@ export default function Feature({ setSidebar, ref3 }) {
             alt=""
             width={100}
             height={100}
-            className="p-2"
+            className="sm:p-2 p-3 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px] "
           />
           <div className="sm:flex justify-items-center grid">
             <p className="">Upload</p>
@@ -38,7 +38,7 @@ export default function Feature({ setSidebar, ref3 }) {
             alt=""
             width={100}
             height={100}
-            className="p-2 "
+            className="sm:p-2 p-3 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
           />
           <p>Book a Test</p>
         </Link>
@@ -51,7 +51,7 @@ export default function Feature({ setSidebar, ref3 }) {
             alt=""
             width={100}
             height={100}
-            className="p-2"
+            className="sm:p-2 p-3 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
           />
           <div className="sm:flex justify-items-center grid">
             <p className="sm:pr-1">Nearest</p>
@@ -64,7 +64,7 @@ export default function Feature({ setSidebar, ref3 }) {
             alt=""
             width={100}
             height={100}
-            className="p-2 "
+            className="sm:p-2 p-3 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
           />
           <div className="sm:flex justify-items-center grid">
             <p className="sm:pr-1">Download</p>

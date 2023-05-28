@@ -14,7 +14,7 @@ export default function Navbar() {
             alt="logo"
             width={200}
             height={30}
-            className=""
+            className="w-[180px] h-[60px]"
           />
         </Link>
       </div>
@@ -37,16 +37,15 @@ export default function Navbar() {
           />
         </div>
       </div>
-      <div className=" sm:pt-2 sm:mx-11">
+      <div className="pt-4 sm:mx-8 hover:scale-110 ease-in duration-300">
         <Link
           href={"https://www.360virtualrealitytours.in/AARNADIAGNOSTICCENTRE/"}
           target="_blank"
           rel="noopener noreferrer"
+          className="border-2 border-black px-2 py-1 sm:px-3 sm:py-2 text-sm rounded-lg border-transparent bg-quaternary text-white
+          "
         >
-          <Tb360View
-            size={30}
-            className="mt-2 text-primary hover:scale-110 ease-in-out duration-300 "
-          />
+          360&deg; Virtual Tour
         </Link>
       </div>
       {/* <div className="sm:hidden flex justify-items-end">
