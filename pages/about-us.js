@@ -11,6 +11,7 @@ export default function AboutUs() {
       link: "/about-us",
     },
   ];
+
   return (
     <div>
       <Breadcrumb links={breadcrumbData} />

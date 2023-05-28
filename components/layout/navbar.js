@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SlLocationPin } from "react-icons/sl";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Tb360View } from "react-icons/tb";
 
 export default function Navbar() {
   return (
@@ -17,7 +18,7 @@ export default function Navbar() {
           />
         </Link>
       </div>
-      <div className="  hidden sm:flex ml-7 pt-2 font-bold justify-between">
+      <div className="hidden sm:flex ml-7 pt-2 font-bold justify-between">
         <Link href="/book-a-test" className="pt-2 px-4">
           Book a Test
         </Link>
@@ -36,9 +37,21 @@ export default function Navbar() {
           />
         </div>
       </div>
-      <div className="sm:hidden flex justify-items-end">
-        <GiHamburgerMenu size={30} className="mt-2 text-primary" />
+      <div className=" sm:pt-2 sm:mx-11">
+        <Link
+          href={"https://www.360virtualrealitytours.in/AARNADIAGNOSTICCENTRE/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Tb360View
+            size={30}
+            className="mt-2 text-primary hover:scale-110 ease-in-out duration-300 "
+          />
+        </Link>
       </div>
+      {/* <div className="sm:hidden flex justify-items-end">
+        <GiHamburgerMenu size={30} className="mt-2 text-primary" />
+      </div> */}
     </div>
   );
 }
