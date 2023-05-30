@@ -23,8 +23,8 @@ export default function Home({ setSidebar, ref3 }) {
       img: "/banners/BANNERS1.jpg",
     },
     // {
-    //   title: "health screening",
-    //   img: "/banners/BANNERS2.jpg",
+    //   title: "aarna ki lab",
+    //   img: "/banners/IMG_1309.jpg",
     // },
     {
       title: "complete health panel",

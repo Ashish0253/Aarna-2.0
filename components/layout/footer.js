@@ -55,10 +55,48 @@ export default function Footer() {
           <div className="m-4">
             <div className="font-bold text-xl ">Follow Us</div>
             <div className="flex">
-              <BsFacebook className="m-2 ml-0" size={23} />
-              <BsTwitter className="m-2" size={23} />
-              <BsLinkedin className="m-2" size={23} />
-              <BsInstagram className="m-2" size={23} />
+              <Link
+                href="https://m.facebook.com/aarnadiagnosticcentre"
+                target="_blank"
+              >
+                <Image
+                  src="/social/Facebook_svg.svg"
+                  alt="facebook"
+                  width={25}
+                  height={25}
+                  className="m-2 ml-0"
+                />
+              </Link>
+              <Link
+                href="https://instagram.com/aarnadiagnosticc?igshid=MmJiY2I4NDBkZg=="
+                target="_blank"
+              >
+                <Image
+                  src="/social/Group.svg"
+                  alt="instagram"
+                  width={25}
+                  height={25}
+                  className="m-2"
+                />
+              </Link>
+              <Link href="https://wa.me/917838723092" target="_blank">
+                <Image
+                  src="/social/WhatsApp_svg.svg"
+                  alt="linkedin"
+                  width={25}
+                  height={25}
+                  className="m-2"
+                />
+              </Link>
+              <Link href="https://g.co/kgs/8ZpfVX" target="_blank">
+                <Image
+                  src="/social/Google_svg.svg"
+                  alt="twitter"
+                  width={25}
+                  height={25}
+                  className="m-2"
+                />
+              </Link>
             </div>
           </div>
         </div>

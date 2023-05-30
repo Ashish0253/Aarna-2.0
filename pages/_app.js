@@ -6,6 +6,7 @@ import "@/styles/globals.css";
 import { useEffect, useMemo, useRef, useState } from "react";
 import useIntersection from "@/hooks/useIntersection";
 import ScrollButton from "@/components/layout/ScrollButton";
+import Whatsapp from "@/components/layout/whatsapp";
 
 export default function App({ Component, pageProps }) {
   const [sidebar, setSidebar] = useState(false);
@@ -25,6 +26,7 @@ export default function App({ Component, pageProps }) {
       <Header />
       <Navbar />
       <ScrollButton />
+      <Whatsapp />
       <Sidebar sidebar={sidebar} />
       <Component {...pageProps} ref3={ref3} />
       <Footer />

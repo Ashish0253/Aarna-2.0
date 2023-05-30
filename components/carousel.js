@@ -64,7 +64,7 @@ export default function Carousel({ data }) {
                   alt={item.title}
                   width={1920}
                   height={400}
-                  className="object-fill"
+                  className="object-fill sm:w-[1800px] sm:h-[330px]"
                 />
               </div>
             );
