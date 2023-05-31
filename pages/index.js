@@ -13,6 +13,7 @@ import Footer from "@/components/layout/footer";
 import WhyAarna from "@/components/whyAarna";
 import Call from "@/components/call";
 import SearchTestAndPackages from "@/components/SearchTestAndPackages";
+import Carousel2 from "@/components/carousel2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,13 +23,40 @@ export default function Home({ setSidebar, ref3 }) {
       title: "health panel",
       img: "/banners/BANNERS1.jpg",
     },
-    // {
-    //   title: "aarna ki lab",
-    //   img: "/banners/IMG_1309.jpg",
-    // },
     {
       title: "complete health panel",
       img: "/banners/BANNERS3.jpg",
+    },
+  ];
+
+  const labKiPhotos = [
+    {
+      title: "lab ki photo 2",
+      img: "/banners/IMG_3548.jpg",
+    },
+    {
+      title: "lab ki photo",
+      img: "/banners/IMG_1309.jpg",
+    },
+    {
+      title: "lab ki photo 3",
+      img: "/banners/IMG_1352.jpg",
+    },
+    {
+      title: "lab ki photo 4",
+      img: "/banners/IMG_3559.jpg",
+    },
+    {
+      title: "lab ki photo 5",
+      img: "/banners/IMG_3555.jpg",
+    },
+    {
+      title: "lab ki photo 6",
+      img: "/banners/IMG_1358.jpg",
+    },
+    {
+      title: "lab ki photo 7",
+      img: "/banners/IMG_1400.jpg",
     },
   ];
 
@@ -42,7 +70,9 @@ export default function Home({ setSidebar, ref3 }) {
       </Head>
 
       <Carousel data={banners} />
+
       <Feature setSidebar={setSidebar} ref3={ref3} />
+      <Carousel2 data={labKiPhotos} />
       <HealthScans />
       <HealthPackages />
       <SearchTestAndPackages />
