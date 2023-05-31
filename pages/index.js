@@ -34,14 +34,14 @@ export default function Home({ setSidebar, ref3 }) {
       title: "lab ki photo 2",
       img: "/banners/IMG_3548.jpg",
     },
-    {
-      title: "lab ki photo",
-      img: "/banners/IMG_1309.jpg",
-    },
-    {
-      title: "lab ki photo 3",
-      img: "/banners/IMG_1352.jpg",
-    },
+    // {
+    //   title: "lab ki photo",
+    //   img: "/banners/IMG_1309.jpg",
+    // },
+    // {
+    //   title: "lab ki photo 3",
+    //   img: "/banners/IMG_1352.jpg",
+    // },
     {
       title: "lab ki photo 4",
       img: "/banners/IMG_3559.jpg",
@@ -50,14 +50,14 @@ export default function Home({ setSidebar, ref3 }) {
       title: "lab ki photo 5",
       img: "/banners/IMG_3555.jpg",
     },
-    {
-      title: "lab ki photo 6",
-      img: "/banners/IMG_1358.jpg",
-    },
-    {
-      title: "lab ki photo 7",
-      img: "/banners/IMG_1400.jpg",
-    },
+    // {
+    //   title: "lab ki photo 6",
+    //   img: "/banners/IMG_1358.jpg",
+    // },
+    // {
+    //   title: "lab ki photo 7",
+    //   img: "/banners/IMG_1400.jpg",
+    // },
   ];
 
   return (
