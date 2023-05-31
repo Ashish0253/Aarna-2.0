@@ -74,3 +74,5 @@ export default function Carousel2({ data }) {
     </div>
   );
 }
+
+// naam theek kr diye images ke
