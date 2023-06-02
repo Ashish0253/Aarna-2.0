@@ -32,31 +32,31 @@ export default function Home({ setSidebar, ref3 }) {
   const labKiPhotos = [
     {
       title: "lab ki photo 2",
-      img: "/banners/IMG_3548.jpg",
+      img: "/banners/IMG_3548.webp",
     },
     {
       title: "lab ki photo",
-      img: "/banners/IMG_1309.jpg",
+      img: "/banners/IMG_1309.webp",
     },
     {
       title: "lab ki photo 3",
-      img: "/banners/IMG_1352.jpg",
+      img: "/banners/IMG_1352.webp",
     },
     {
       title: "lab ki photo 4",
-      img: "/banners/IMG_3559.jpg",
+      img: "/banners/IMG_3559.webp",
     },
     {
       title: "lab ki photo 5",
-      img: "/banners/IMG_3555.jpg",
+      img: "/banners/IMG_3555.webp",
     },
     {
       title: "lab ki photo 6",
-      img: "/banners/IMG_1358.jpg",
+      img: "/banners/IMG_1358.webp",
     },
     {
       title: "lab ki photo 7",
-      img: "/banners/IMG_1400.jpg",
+      img: "/banners/IMG_1400.webp",
     },
   ];
 

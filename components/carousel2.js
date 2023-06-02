@@ -59,6 +59,7 @@ export default function Carousel2({ data }) {
           {data.map((item) => {
             return (
               <div key={data.title} className="">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <Image
                   src={item.img}
                   alt={item.title}
