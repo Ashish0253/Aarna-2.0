@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="bg-tertiary text-white font-bold sm:px-[28%] text-xs sm:text-base">
       <div className=" container flex justify-around p-3">
-        <Link href="/" className="">
+        <Link href="/doctors" className="">
           DOCTORS
         </Link>
         <Link href="/departments">DEPARTMENTS</Link>

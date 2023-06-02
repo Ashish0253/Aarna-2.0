@@ -11,6 +11,42 @@ export default function Departments() {
       link: "/departments",
     },
   ];
+
+  const pathology = [
+    {
+      name: "Reporting Area",
+    },
+    {
+      name: "Hematology",
+    },
+    {
+      name: "Biochemistry",
+    },
+    {
+      name: "Microbiology",
+    },
+    {
+      name: "Histopathology",
+    },
+    {
+      name: "Sample Collection Room",
+    },
+  ];
+
+  const radiology = [
+    {
+      name: "X-Ray Room",
+    },
+    {
+      name: "Ultrasound Room 1",
+    },
+    {
+      name: "Ultrasound Room 2",
+    },
+    {
+      name: "CT Scan Room",
+    },
+  ];
   return (
     <div>
       <Breadcrumb links={breadcrumbData} />
