@@ -34,10 +34,10 @@ export default function Home({ setSidebar, ref3 }) {
       title: "lab ki photo 2",
       img: "/banners/IMG_3548.webp",
     },
-    {
-      title: "lab ki photo",
-      img: "/banners/IMG_1309.webp",
-    },
+    // {
+    //   title: "lab ki photo",
+    //   img: "/banners/IMG_1309.webp",
+    // },
     {
       title: "lab ki photo 3",
       img: "/banners/IMG_1352.webp",
