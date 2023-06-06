@@ -79,7 +79,7 @@ export default function Footer() {
                   className="m-2"
                 />
               </Link>
-              <Link href="https://wa.me/917838723092" target="_blank">
+              <Link href="https://wa.me/919997579898" target="_blank">
                 <Image
                   src="/social/WhatsApp_svg.svg"
                   alt="linkedin"
